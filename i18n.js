@@ -106,9 +106,16 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
 });
 
+// Detect browser/device language
+function getDefaultLanguage() {
+    const browserLang = navigator.language || navigator.userLanguage;
+    // Check if browser language starts with 'fr' (fr, fr-FR, fr-CA, etc.)
+    return browserLang.startsWith('fr') ? 'fr' : 'en';
+}
+
 // Apply language after DOM is fully loaded (including dynamic content)
 document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('preferred-lang') || 'fr';
+    const savedLang = localStorage.getItem('preferred-lang') || getDefaultLanguage();
     // Small delay to ensure dynamic content is rendered
     setTimeout(() => setLanguage(savedLang), 10);
 });
