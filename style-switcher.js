@@ -56,7 +56,9 @@ const cardStyles = {
                         <h3>${app.name}</h3>
                         <span class="category" data-i18n="${app.category}"></span>
                     </div>
-                    <a href="${app.url}" class="app-card__get" target="_blank" rel="noopener">GET</a>
+                    <a href="${app.url}" class="app-store-badge" target="_blank" rel="noopener">
+                        <img src="${getAppStoreBadge()}" alt="App Store" data-badge="appstore">
+                    </a>
                 </div>
                 <p class="app-description" data-i18n="${app.descKey}"></p>
             </article>
