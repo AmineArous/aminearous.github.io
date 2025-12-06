@@ -200,6 +200,131 @@ body {
     opacity: 0.8;
 }
 
+/* Card Style: Compact */
+.app-card--compact {
+    padding: 24px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-card--compact .app-icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 12px;
+}
+
+.app-card--compact h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.app-card--compact .category {
+    font-size: 0.75rem;
+}
+
+.app-card--compact .app-card__link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card Style: App Store */
+.app-card--appstore {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.app-card--appstore .app-card__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.app-card--appstore .app-icon img {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+}
+
+.app-card--appstore .app-card__title {
+    flex: 1;
+}
+
+.app-card--appstore .app-card__title h3 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.app-card--appstore .app-card__title .category {
+    background: none;
+    padding: 0;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.app-card--appstore .app-card__get {
+    background: var(--primary-color);
+    color: white;
+    padding: 6px 18px;
+    border-radius: 100px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.app-card--appstore .app-card__get:hover {
+    background: #0066d6;
+}
+
+.app-card--appstore .app-description {
+    font-size: 0.875rem;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.app-card--appstore .price.free {
+    background: rgba(52, 199, 89, 0.1);
+    color: #34C759;
+}
+
+/* Style Switcher */
+.style-switcher {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.style-btn {
+    background: var(--background);
+    border: 1px solid #ddd;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.style-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.style-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
 /* Footer */
 footer {
     padding: 48px 0;
