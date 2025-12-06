@@ -1116,13 +1116,18 @@ footer p {
     }
 
     .app-card--appstore .app-card__header {
-        padding-right: 0;
-        flex-wrap: wrap;
+        padding-right: 100px;
+        width: 100%;
     }
 
     .app-card--appstore .app-store-badge {
-        position: static;
-        margin-top: 12px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .app-card--appstore .app-store-badge img {
+        height: 32px;
     }
 
     .app-description {
