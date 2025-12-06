@@ -5,7 +5,16 @@ const apps = [
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/3e/0f/173e0fc2-75c2-7023-f751-e7a9a3767bf4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/rituo/id6752529512",
         category: "cat-productivity",
-        descKey: "rituo-desc"
+        descKey: "rituo-desc",
+        screenshots: [
+            "assets/Rituo1.png",
+            "assets/Rituo2.png",
+            "assets/Rituo3.png",
+            "assets/Rituo4.png",
+            "assets/Rituo5.png",
+            "assets/Rituo6.png",
+            "assets/Rituo7.png"
+        ]
     },
     {
         id: "mealwise",
@@ -13,7 +22,15 @@ const apps = [
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a7/21/7f/a7217fc7-dea0-357e-a374-9686de6d12b8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/mealwise/id6754667452",
         category: "cat-health",
-        descKey: "mealwise-desc"
+        descKey: "mealwise-desc",
+        screenshots: [
+            "assets/MealWise1.png",
+            "assets/MealWise2.png",
+            "assets/MealWise3.png",
+            "assets/MealWise4.png",
+            "assets/MealWise5.png",
+            "assets/MealWise6.png"
+        ]
     },
     {
         id: "tictactoe",
@@ -21,7 +38,13 @@ const apps = [
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/cd/5e/6c/cd5e6cea-7aea-c23b-a534-5556590d5e0b/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/tic-tac-toe/id382936587",
         category: "cat-games",
-        descKey: "tictactoe-desc"
+        descKey: "tictactoe-desc",
+        screenshots: [
+            "assets/Tictactoe1.png",
+            "assets/Tictactoe2.png",
+            "assets/Tictactoe3.png",
+            "assets/Tictactoe4.png"
+        ]
     },
     {
         id: "warship",
@@ -29,7 +52,14 @@ const apps = [
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/2b/d2/042bd23a-512d-e677-f266-b9e2dd458803/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/warship-challenge/id6446063559",
         category: "cat-games",
-        descKey: "warship-desc"
+        descKey: "warship-desc",
+        screenshots: [
+            "assets/bn1.png",
+            "assets/bn2.png",
+            "assets/bn3.png",
+            "assets/bn4.png",
+            "assets/bn5.png"
+        ]
     },
     {
         id: "crossword",
@@ -37,7 +67,13 @@ const apps = [
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/4a/da/4a/4ada4a61-f5cf-daec-1731-19b2ebd1dae1/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/crossword-mix/id6446602766",
         category: "cat-games",
-        descKey: "crossword-desc"
+        descKey: "crossword-desc",
+        screenshots: [
+            "assets/crossword-mix1.png",
+            "assets/crossword-mix2.png",
+            "assets/crossword-mix3.png",
+            "assets/crossword-mix4.png"
+        ]
     },
     {
         id: "motscroises",
@@ -45,7 +81,12 @@ const apps = [
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/34/ae/47/34ae47af-41e1-788a-1375-f8e1bb09900e/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/mots-crois%C3%A9s-fran%C3%A7ais/id6446811568",
         category: "cat-games",
-        descKey: "motscroises-desc"
+        descKey: "motscroises-desc",
+        screenshots: [
+            "assets/crosswordfr1.png",
+            "assets/crosswordfr2.png",
+            "assets/crosswordfr3.png"
+        ]
     },
     {
         id: "brainquiz",
@@ -53,7 +94,14 @@ const apps = [
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/6d/de/f4/6ddef403-dc71-614c-7e74-0cf48040fcf4/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/brain-quiz-master/id6446297886",
         category: "cat-games",
-        descKey: "brainquiz-desc"
+        descKey: "brainquiz-desc",
+        screenshots: [
+            "assets/brain-quiz-master1.png",
+            "assets/brain-quiz-master2.png",
+            "assets/brain-quiz-master3.png",
+            "assets/brain-quiz-master4.png",
+            "assets/brain-quiz-master5.webp"
+        ]
     },
     {
         id: "goal",
@@ -62,7 +110,14 @@ const apps = [
         url: "https://apps.apple.com/app/goal-lets-play/id1669709630",
         category: "cat-games",
         descKey: "goal-desc",
-        price: "goal-price"
+        price: "goal-price",
+        screenshots: [
+            "assets/goal1.png",
+            "assets/goal2.png",
+            "assets/goal3.png",
+            "assets/goal4.png",
+            "assets/goal5.png"
+        ]
     },
     {
         id: "puzzlo",
@@ -70,6 +125,12 @@ const apps = [
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/c6/2a/fe/c62afe97-995c-de9d-631a-3be9f67a4792/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/puzzlo/id6447078771",
         category: "cat-games",
-        descKey: "puzzlo-desc"
+        descKey: "puzzlo-desc",
+        screenshots: [
+            "assets/puzzlo1.png",
+            "assets/puzzlo2.png",
+            "assets/puzzlo3.png",
+            "assets/puzzlo4.png"
+        ]
     }
 ];

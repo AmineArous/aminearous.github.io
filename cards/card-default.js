@@ -1,10 +1,17 @@
 // Card template
 function renderCard(app) {
     const lang = localStorage.getItem('preferred-lang') || 'fr';
-    const badgeSrc = lang === 'en' ? 'assets/appstoreen.png' : 'assets/appstorefr.png';
+    const theme = document.documentElement.getAttribute('data-theme');
+    const isDark = theme === 'dark';
+    let badgeSrc;
+    if (lang === 'en') {
+        badgeSrc = isDark ? 'assets/appstoreen-dark.svg' : 'assets/appstoreen.svg';
+    } else {
+        badgeSrc = isDark ? 'assets/appstorefr-dark.svg' : 'assets/appstorefr.svg';
+    }
 
     return `
-        <article class="app-card app-card--appstore">
+        <article class="app-card app-card--appstore" data-app-id="${app.id}">
             <div class="app-card__header">
                 <div class="app-icon">
                     <img src="${app.icon}" alt="${app.name}">

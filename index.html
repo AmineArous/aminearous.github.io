@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="top-nav">
@@ -32,25 +32,37 @@
 
     <header class="hero">
         <div class="container">
-            <h1>Amine Arous</h1>
-            <p class="tagline" data-i18n="tagline">Développeur iOS</p>
-            <p class="intro" data-i18n="intro">Je crée des applications iOS intuitives et performantes.</p>
+            <div class="hero-content">
+                <h1>Amine Arous</h1>
+                <p class="tagline-role"><svg class="apple-icon" width="20" height="24" viewBox="0 0 814 1000" fill="currentColor"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 781.5 0 643.5 0 515.9 0 330.1 118.5 231.8 234.9 231.8c65.6 0 120.2 43.1 161.4 43.1 39.1 0 100.2-45.8 175.8-45.8 28.4 0 130.5 2.6 197.1 98.9l18.9 12.9z"/><path d="M554.1 0c5.8 59.5-17 118.1-53 158.6-36 40.5-93.1 71.5-148.3 67.5-6.5-56.2 18.3-115.4 52.1-152.5C441.8 37 504.5 4.5 554.1 0z"/></svg><span data-i18n="tagline">iOS Engineer</span></p>
+            </div>
+            <p class="tagline-sub" data-i18n="tagline-sub">Passionné par l'écosystème Apple</p>
         </div>
     </header>
 
+    <nav class="section-nav">
+        <div class="container">
+            <div class="nav-menu">
+                <a href="#experience" class="nav-link active" data-section="experience" data-i18n="nav-experience">Expérience</a>
+                <a href="#portfolio" class="nav-link" data-section="portfolio" data-i18n="nav-portfolio">Portfolio</a>
+                <span class="nav-indicator"></span>
+            </div>
+        </div>
+    </nav>
+
     <main>
-        <section class="experience-section">
+        <section id="experience" class="experience-section">
             <div class="container">
-                <h2 data-i18n="experience">Expérience Professionnelle</h2>
+                <h2 data-i18n="nav-experience">Expérience</h2>
                 <div class="timeline">
                     <!-- Généré dynamiquement par experience-renderer.js -->
                 </div>
             </div>
         </section>
 
-        <section class="apps-section">
+        <section id="portfolio" class="apps-section">
             <div class="container">
-                <h2 data-i18n="myApps">Mes Applications</h2>
+                <h2 data-i18n="nav-portfolio">Portfolio</h2>
                 <div class="apps-grid">
                     <!-- Les cartes sont générées dynamiquement par renderer.js -->
                 </div>
@@ -61,7 +73,11 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="mailto:m.aminearous@gmail.com" class="contact-btn" data-i18n="contact">Me contacter</a>
+                <a href="mailto:m.aminearous@gmail.com" aria-label="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </a>
                 <a href="https://x.com/AmineArous" aria-label="X" target="_blank" rel="noopener">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -84,10 +100,12 @@
 
     <script src="apps.js"></script>
     <script src="cards/card-default.js"></script>
+    <script src="app-modal.js"></script>
     <script src="renderer.js"></script>
     <script src="experiences.js"></script>
     <script src="experience-renderer.js"></script>
     <script src="i18n.js"></script>
     <script src="theme.js"></script>
+    <script src="navigation.js"></script>
 </body>
 </html>
