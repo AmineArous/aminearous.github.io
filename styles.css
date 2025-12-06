@@ -306,6 +306,10 @@ body {
     margin-bottom: 2px;
 }
 
+.app-card--appstore .app-store-badge img {
+    height: 44px;
+}
+
 .app-card--appstore .app-card__title .category {
     background: none;
     padding: 0;
