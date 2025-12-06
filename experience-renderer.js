@@ -1,12 +1,29 @@
 function renderExperience(exp, index) {
     const techBadges = exp.techs.map(tech => `<span class="tech-badge">${tech}</span>`).join('');
 
+    const logoHTML = exp.logo
+        ? `<img src="${exp.logo}" alt="${exp.company}" class="timeline-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+           <div class="timeline-logo-placeholder" style="display:none;">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                   <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                   <line x1="8" y1="21" x2="16" y2="21"/>
+                   <line x1="12" y1="17" x2="12" y2="21"/>
+               </svg>
+           </div>`
+        : `<div class="timeline-logo-placeholder">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                   <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                   <line x1="8" y1="21" x2="16" y2="21"/>
+                   <line x1="12" y1="17" x2="12" y2="21"/>
+               </svg>
+           </div>`;
+
     return `
         <article class="timeline-item" data-index="${index}">
             <div class="timeline-marker"></div>
             <div class="timeline-content">
                 <div class="timeline-header">
-                    <img src="${exp.logo}" alt="${exp.company}" class="timeline-logo">
+                    ${logoHTML}
                     <div class="timeline-title">
                         <h3>${exp.company}</h3>
                         <span class="timeline-role" data-i18n="${exp.roleKey}"></span>

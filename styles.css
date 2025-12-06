@@ -353,6 +353,24 @@ body {
     flex-shrink: 0;
 }
 
+.timeline-logo-placeholder {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--text-secondary);
+    padding: 6px;
+}
+
+[data-theme="dark"] .timeline-logo-placeholder {
+    background: #3a3a3c;
+    color: #8e8e93;
+}
+
 .timeline-title {
     flex: 1;
     min-width: 0;

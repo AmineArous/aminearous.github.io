@@ -34,5 +34,14 @@ const experiences = [
         date: "2014 - 2015",
         techs: ["Objective-C", "UIKit", "CoreData", "REST API"],
         detailsKey: "exp-stime-details"
+    },
+    {
+        company: "Smartfingers Media (Insign Group)",
+        logo: "assets/logos/smartfingers.png",
+        roleKey: "exp-smartfingers-role",
+        descKey: "exp-smartfingers-desc",
+        date: "2010 - 2014",
+        techs: ["Objective-C", "iOS", "REST API", "SQLite", "Android"],
+        detailsKey: "exp-smartfingers-details"
     }
 ];
