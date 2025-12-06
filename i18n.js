@@ -2,8 +2,17 @@ const translations = {
     fr: {
         tagline: "Développeur iOS",
         intro: "Je crée des applications iOS intuitives et performantes.",
+        experience: "Expérience Professionnelle",
         myApps: "Mes Applications",
         footer: "© 2025 Amine Arous. Tous droits réservés.",
+        "exp-accor-role": "Senior iOS Developer",
+        "exp-accor-desc": "Application All.com - Optimisation de l'architecture, développement de nouvelles fonctionnalités (Accor Deals, Year in Review), amélioration de la qualité.",
+        "exp-meetic-role": "Senior iOS Developer",
+        "exp-meetic-desc": "Applications Meetic, DisonsDemain, Match - Développement de fonctionnalités in-app, release manager pour 8 applications.",
+        "exp-pj-role": "Senior iOS Developer / Tech Lead",
+        "exp-pj-desc": "Application PagesJaunes iOS - Tech Lead, développement iOS 14 Widget, App Clip, extension Siri, maintenance CI/CD Bitrise.",
+        "exp-stime-role": "Senior Mobile Developer",
+        "exp-stime-desc": "Application Drive Intermarché - Gestion des lots, modification de commandes, gestion de stock.",
         "cat-productivity": "Productivité",
         "cat-health": "Santé & Fitness",
         "cat-games": "Jeux",
@@ -16,13 +25,23 @@ const translations = {
         "motscroises-desc": "Des grilles de mots croisés générées aléatoirement avec trois niveaux de difficulté pour les amateurs de langue française.",
         "brainquiz-desc": "Un jeu de puzzle innovant et addictif qui met à l'épreuve vos compétences logiques et mathématiques.",
         "goal-desc": "Un jeu de puzzle où vous devez marquer des buts sur un terrain de foot 2D. Stratégie et réflexion au rendez-vous !",
-        "puzzlo-desc": "Un jeu fun et addictif qui met au défi vos compétences en puzzle. Combinez les blocs pour atteindre 4096 !"
+        "puzzlo-desc": "Un jeu fun et addictif qui met au défi vos compétences en puzzle. Combinez les blocs pour atteindre 4096 !",
+        "contact": "Me contacter"
     },
     en: {
         tagline: "iOS Developer",
         intro: "I create intuitive and powerful iOS applications.",
+        experience: "Professional Experience",
         myApps: "My Applications",
         footer: "© 2025 Amine Arous. All rights reserved.",
+        "exp-accor-role": "Senior iOS Developer",
+        "exp-accor-desc": "All.com App - Architecture optimization, new features development (Accor Deals, Year in Review), quality improvement.",
+        "exp-meetic-role": "Senior iOS Developer",
+        "exp-meetic-desc": "Meetic, DisonsDemain, Match Apps - In-app features development, release manager for 8 applications.",
+        "exp-pj-role": "Senior iOS Developer / Tech Lead",
+        "exp-pj-desc": "PagesJaunes iOS App - Tech Lead, iOS 14 Widget, App Clip, Siri extension development, CI/CD Bitrise maintenance.",
+        "exp-stime-role": "Senior Mobile Developer",
+        "exp-stime-desc": "Drive Intermarché App - Lot management, order modification, stock management.",
         "cat-productivity": "Productivity",
         "cat-health": "Health & Fitness",
         "cat-games": "Games",
@@ -35,7 +54,8 @@ const translations = {
         "motscroises-desc": "Randomly generated crossword grids with three difficulty levels for French language enthusiasts.",
         "brainquiz-desc": "An innovative and addictive puzzle game that tests your logical and mathematical skills.",
         "goal-desc": "A puzzle game where you score goals on a 2D soccer field. Strategy and thinking await!",
-        "puzzlo-desc": "A fun and addictive game that challenges your puzzle skills. Combine blocks to reach 4096!"
+        "puzzlo-desc": "A fun and addictive game that challenges your puzzle skills. Combine blocks to reach 4096!",
+        "contact": "Contact me"
     }
 };
 

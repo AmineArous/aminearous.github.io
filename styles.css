@@ -150,6 +150,82 @@ body {
     margin: 0 auto;
 }
 
+/* Experience Section */
+.experience-section {
+    padding: 40px 0;
+}
+
+.experience-section h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 32px;
+    letter-spacing: -0.02em;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.experience-card {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+    transition: var(--transition);
+}
+
+.experience-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.experience-logo {
+    flex-shrink: 0;
+}
+
+.experience-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    object-fit: contain;
+    background: #ffffff;
+    padding: 8px;
+}
+
+.experience-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.experience-info h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.experience-role {
+    color: var(--primary-color);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.experience-date {
+    color: var(--text-secondary);
+    font-size: 0.8125rem;
+}
+
+.experience-desc {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
 /* Apps Section */
 .apps-section {
     padding: 40px 0 60px;
@@ -307,7 +383,7 @@ body {
 }
 
 .app-card--appstore .app-store-badge img {
-    height: 44px;
+    height: 54px;
 }
 
 .app-card--appstore .app-card__title .category {
@@ -407,6 +483,18 @@ footer p {
 
 .social-links a:hover {
     color: var(--primary-color);
+}
+
+.contact-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.contact-link:hover {
+    opacity: 0.8;
 }
 
 /* Responsive Design */
