@@ -985,18 +985,36 @@ footer p {
 
 /* Modal Responsive */
 @media (max-width: 768px) {
+    .modal-content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
     .modal-body {
         flex-direction: column;
         padding: 24px;
         padding-top: 56px;
+        gap: 24px;
+    }
+
+    .modal-left {
+        width: 100%;
+        order: 2;
     }
 
     .modal-right {
         flex: none;
+        width: 100%;
+        order: 1;
     }
 
-    .modal-screenshots {
-        height: 300px;
+    .modal-screenshots-container {
+        width: 100%;
+    }
+
+    .modal-screenshot {
+        max-height: 350px;
+        max-width: 100%;
     }
 
     .modal-placeholder {
@@ -1006,6 +1024,15 @@ footer p {
     .modal-nav {
         width: 32px;
         height: 32px;
+    }
+
+    .modal-header {
+        flex-wrap: wrap;
+    }
+
+    .modal-badge {
+        align-self: flex-start;
+        margin-top: 8px;
     }
 }
 
@@ -1073,17 +1100,32 @@ footer p {
     .timeline-date {
         order: -1;
         width: 100%;
+        text-align: right;
+    }
+
+    .experience-section h2 {
+        padding-left: 35px;
     }
 }
 
 @media (max-width: 480px) {
     .app-card {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left;
     }
 
-    .app-meta {
-        justify-content: center;
+    .app-card--appstore .app-card__header {
+        padding-right: 0;
+        flex-wrap: wrap;
+    }
+
+    .app-card--appstore .app-store-badge {
+        position: static;
+        margin-top: 12px;
+    }
+
+    .app-description {
+        text-align: left;
     }
 }
