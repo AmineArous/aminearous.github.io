@@ -1,5 +1,19 @@
 const apps = [
     {
+        id: "motscroisesfr",
+        name: "Mots Croisés FR",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/59/fd/ad/59fdad93-2f64-2c18-01b0-7b7abf59c0aa/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/mots-croises-fr/id6755928817",
+        category: "cat-games",
+        descKey: "motscroisesfr-desc",
+        screenshots: [
+            "assets/motscroisesfr1.jpg",
+            "assets/motscroisesfr2.jpg",
+            "assets/motscroisesfr3.jpg",
+            "assets/motscroisesfr4.jpg"
+        ]
+    },
+    {
         id: "rituo",
         name: "Rituo",
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/3e/0f/173e0fc2-75c2-7023-f751-e7a9a3767bf4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
