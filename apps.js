@@ -1,5 +1,19 @@
 const apps = [
     {
+        id: "crosswordplay",
+        name: "Crossword Play",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/23/de/d0/23ded040-b542-f352-13d0-a3eb191f655b/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/6756207492",
+        category: "cat-games",
+        descKey: "crosswordplay-desc",
+        screenshots: [
+            "assets/crossword1.webp",
+            "assets/crossword2.webp",
+            "assets/crossword3.webp",
+            "assets/crossword4.webp"
+        ]
+    },
+    {
         id: "motscroisesfr",
         name: "Mots Croisés FR",
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/59/fd/ad/59fdad93-2f64-2c18-01b0-7b7abf59c0aa/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
