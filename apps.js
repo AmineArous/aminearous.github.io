@@ -1,4 +1,20 @@
 const apps = [
+        {
+        id: "playblox",
+        name: "PlayBlox",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/47/f0/b3/47f0b38a-717c-05c2-bc9f-8fb500a74f69/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/playblox/id6756233416",
+        category: "cat-games",
+        descKey: "playblox-desc",
+        screenshots: [
+            "assets/playblox1.webp",
+            "assets/playblox2.webp",
+            "assets/playblox3.webp",
+            "assets/playblox4.webp",
+            "assets/playblox5.webp",
+            "assets/playblox6.webp"
+        ]
+    },
     {
         id: "crosswordplay",
         name: "Crossword Play",

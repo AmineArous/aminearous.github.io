@@ -36,6 +36,7 @@ const translations = {
         "crosswordplay-desc": "Jeu de mots croisés addictif avec des milliers de grilles quotidiennes, trois niveaux de difficulté et mode hors ligne.",
         "brainquiz-desc": "Un jeu de puzzle innovant et addictif qui met à l'épreuve vos compétences logiques et mathématiques.",
         "goal-desc": "Un jeu de puzzle où vous devez marquer des buts sur un terrain de foot 2D. Stratégie et réflexion au rendez-vous !",
+        "playblox-desc": "Empile des blocs colorés, nettoie les lignes et vise le meilleur score dans ce puzzle arcade rapide.",
         "puzzlo-desc": "Un jeu fun et addictif qui met au défi vos compétences en puzzle. Combinez les blocs pour atteindre 4096 !",
         "screenshots-coming": "Screenshots bientôt disponibles"
     },
@@ -76,6 +77,7 @@ const translations = {
         "crosswordplay-desc": "Addictive crossword game with thousands of daily puzzles, three difficulty levels, and offline mode.",
         "brainquiz-desc": "An innovative and addictive puzzle game that tests your logical and mathematical skills.",
         "goal-desc": "A puzzle game where you score goals on a 2D soccer field. Strategy and thinking await!",
+        "playblox-desc": "Stack colorful blocks, clear lines, and chase high scores in a fast-paced arcade puzzle.",
         "puzzlo-desc": "A fun and addictive game that challenges your puzzle skills. Combine blocks to reach 4096!",
         "screenshots-coming": "Screenshots coming soon"
     }
