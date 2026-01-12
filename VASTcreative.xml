@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<?charles serialisation-version='2.0' ?>
+<rewriteSet-array>
+  <rewriteSet>
+    <active>true</active>
+    <name>iOS SDK</name>
+    <hosts>
+      <locationPatterns>
+        <locationMatch>
+          <location>
+            <protocol>https</protocol>
+            <host>*smaato*</host>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+      </locationPatterns>
+    </hosts>
+    <rules>
+      <rewriteRule>
+        <active>false</active>
+        <ruleType>11</ruleType>
+        <matchValue></matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>false</matchResponse>
+        <newValue>200</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>7</ruleType>
+        <matchValue></matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>true</matchResponse>
+        <newValue>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;VAST version=&quot;2.0&quot;&gt;    &lt;Ad id=&quot;fb23ff31-4492-40dd-8c0b-87ddca883b53&quot;&gt;       &lt;InLine&gt;          &lt;AdSystem&gt;Liftoff&lt;/AdSystem&gt;          &lt;AdTitle&gt;335975&lt;/AdTitle&gt;          &lt;Impression&gt;&lt;![CDATA[https://impression-east.liftoff.io/verve/beacon?ad_group_id=160643&amp;channel_id=119&amp;creative_id=335975&amp;auction_id=CBof3RXE5l1lgzIJC7F0&amp;origin=haggler-verve4014]]&gt;&lt;/Impression&gt;          &lt;Creatives&gt;             &lt;Creative&gt;                &lt;Linear&gt;                   &lt;Duration&gt;00:00:15&lt;/Duration&gt;                   &lt;MediaFiles&gt;                      &lt;MediaFile width=&quot;360&quot; height=&quot;640&quot; type=&quot;video/mp4&quot; bitrate=&quot;1060&quot; delivery=&quot;progressive&quot; scalable=&quot;true&quot; maintainAspectRatio=&quot;true&quot;&gt;&lt;![CDATA[https://cdn.liftoff-creatives.io/dev/customers/e039ca02d2/videos/mobile/ce7f8ca726b4ed34b5c8.mp4]]&gt;&lt;/MediaFile&gt;                   &lt;/MediaFiles&gt;                   &lt;TrackingEvents&gt;                      &lt;Tracking event=&quot;start&quot;&gt;&lt;![CDATA[https://adexp.liftoff.io/event/vast/start/71b4a8CIPnCRIgYmExNTI5ZjI2Y2UxNGQyMTk3MDhjMjE1MTVmZjZmM2IY4NKr3OwwIHco58AUMPUJOgoxNTYwNTQ1MTE4Qh5jcnNlcnZlLWlvcy1wb2QtZm9yY2VkLWNvbnRyb2xCGm1pbnRlZ3JhbC1zdG9yZWtpdC1jb250cm9sQiNtYWRsaWItbG9jYWxpemUtZ2VuZXJpYy1jdGEtY29udHJvbEIaY3JzZXJ2ZS1za2FuLXBvZC1leHAtdGllcjFCGGNyc2VydmUtZGVhZHpvbmUtY29udHJvbEIbbGlmdG9mZi1tcmFpZC12Mi1leHBlcmltZW50Sgo2NWM1YWI3OTM4UAJaA01FWGABaAFyCXVzLWVhc3QtMeABAYABd5IBAmVzmAEBoQEAAAAAAACwP6oBBzMyMHg0ODCyAQVNdXNpY7oBHk11c2ljIEZNIEJveCBGaW5kIE1lZXQgQXdlc29tZcIBGXZhc3QtOTBlNDAxYTdlMzNhZDRkYmE0YjbSAQUwMzAyMNoBBXZpZGVv?playhead=[CONTENTPLAYHEAD]&amp;sr=1]]&gt;&lt;/Tracking&gt;                      &lt;Tracking event=&quot;firstQuartile&quot;&gt;&lt;![CDATA[https://adexp.liftoff.io/event/vast/firstQuartile/71b4a8CIPnCRIgYmExNTI5ZjI2Y2UxNGQyMTk3MDhjMjE1MTVmZjZmM2IY4NKr3OwwIHco58AUMPUJOgoxNTYwNTQ1MTE4Qh5jcnNlcnZlLWlvcy1wb2QtZm9yY2VkLWNvbnRyb2xCGm1pbnRlZ3JhbC1zdG9yZWtpdC1jb250cm9sQiNtYWRsaWItbG9jYWxpemUtZ2VuZXJpYy1jdGEtY29udHJvbEIaY3JzZXJ2ZS1za2FuLXBvZC1leHAtdGllcjFCGGNyc2VydmUtZGVhZHpvbmUtY29udHJvbEIbbGlmdG9mZi1tcmFpZC12Mi1leHBlcmltZW50Sgo2NWM1YWI3OTM4UAJaA01FWGABaAFyCXVzLWVhc3QtMeABAYABd5IBAmVzmAEBoQEAAAAAAACwP6oBBzMyMHg0ODCyAQVNdXNpY7oBHk11c2ljIEZNIEJveCBGaW5kIE1lZXQgQXdlc29tZcIBGXZhc3QtOTBlNDAxYTdlMzNhZDRkYmE0YjbSAQUwMzAyMNoBBXZpZGVv?playhead=[CONTENTPLAYHEAD]&amp;sr=1]]&gt;&lt;/Tracking&gt;                      &lt;Tracking event=&quot;midpoint&quot;&gt;&lt;![CDATA[https://adexp.liftoff.io/event/vast/midpoint/71b4a8CIPnCRIgYmExNTI5ZjI2Y2UxNGQyMTk3MDhjMjE1MTVmZjZmM2IY4NKr3OwwIHco58AUMPUJOgoxNTYwNTQ1MTE4Qh5jcnNlcnZlLWlvcy1wb2QtZm9yY2VkLWNvbnRyb2xCGm1pbnRlZ3JhbC1zdG9yZWtpdC1jb250cm9sQiNtYWRsaWItbG9jYWxpemUtZ2VuZXJpYy1jdGEtY29udHJvbEIaY3JzZXJ2ZS1za2FuLXBvZC1leHAtdGllcjFCGGNyc2VydmUtZGVhZHpvbmUtY29udHJvbEIbbGlmdG9mZi1tcmFpZC12Mi1leHBlcmltZW50Sgo2NWM1YWI3OTM4UAJaA01FWGABaAFyCXVzLWVhc3QtMeABAYABd5IBAmVzmAEBoQEAAAAAAACwP6oBBzMyMHg0ODCyAQVNdXNpY7oBHk11c2ljIEZNIEJveCBGaW5kIE1lZXQgQXdlc29tZcIBGXZhc3QtOTBlNDAxYTdlMzNhZDRkYmE0YjbSAQUwMzAyMNoBBXZpZGVv?playhead=[CONTENTPLAYHEAD]&amp;sr=1]]&gt;&lt;/Tracking&gt;                      &lt;Tracking event=&quot;thirdQuartile&quot;&gt;&lt;![CDATA[https://adexp.liftoff.io/event/vast/thirdQuartile/71b4a8CIPnCRIgYmExNTI5ZjI2Y2UxNGQyMTk3MDhjMjE1MTVmZjZmM2IY4NKr3OwwIHco58AUMPUJOgoxNTYwNTQ1MTE4Qh5jcnNlcnZlLWlvcy1wb2QtZm9yY2VkLWNvbnRyb2xCGm1pbnRlZ3JhbC1zdG9yZWtpdC1jb250cm9sQiNtYWRsaWItbG9jYWxpemUtZ2VuZXJpYy1jdGEtY29udHJvbEIaY3JzZXJ2ZS1za2FuLXBvZC1leHAtdGllcjFCGGNyc2VydmUtZGVhZHpvbmUtY29udHJvbEIbbGlmdG9mZi1tcmFpZC12Mi1leHBlcmltZW50Sgo2NWM1YWI3OTM4UAJaA01FWGABaAFyCXVzLWVhc3QtMeABAYABd5IBAmVzmAEBoQEAAAAAAACwP6oBBzMyMHg0ODCyAQVNdXNpY7oBHk11c2ljIEZNIEJveCBGaW5kIE1lZXQgQXdlc29tZcIBGXZhc3QtOTBlNDAxYTdlMzNhZDRkYmE0YjbSAQUwMzAyMNoBBXZpZGVv?playhead=[CONTENTPLAYHEAD]&amp;sr=1]]&gt;&lt;/Tracking&gt;                      &lt;Tracking event=&quot;complete&quot;&gt;&lt;![CDATA[https://adexp.liftoff.io/event/vast/complete/71b4a8CIPnCRIgYmExNTI5ZjI2Y2UxNGQyMTk3MDhjMjE1MTVmZjZmM2IY4NKr3OwwIHco58AUMPUJOgoxNTYwNTQ1MTE4Qh5jcnNlcnZlLWlvcy1wb2QtZm9yY2VkLWNvbnRyb2xCGm1pbnRlZ3JhbC1zdG9yZWtpdC1jb250cm9sQiNtYWRsaWItbG9jYWxpemUtZ2VuZXJpYy1jdGEtY29udHJvbEIaY3JzZXJ2ZS1za2FuLXBvZC1leHAtdGllcjFCGGNyc2VydmUtZGVhZHpvbmUtY29udHJvbEIbbGlmdG9mZi1tcmFpZC12Mi1leHBlcmltZW50Sgo2NWM1YWI3OTM4UAJaA01FWGABaAFyCXVzLWVhc3QtMeABAYABd5IBAmVzmAEBoQEAAAAAAACwP6oBBzMyMHg0ODCyAQVNdXNpY7oBHk11c2ljIEZNIEJveCBGaW5kIE1lZXQgQXdlc29tZcIBGXZhc3QtOTBlNDAxYTdlMzNhZDRkYmE0YjbSAQUwMzAyMNoBBXZpZGVv?playhead=[CONTENTPLAYHEAD]&amp;sr=1]]&gt;&lt;/Tracking&gt;                   &lt;/TrackingEvents&gt;                   &lt;VideoClicks&gt;                      &lt;ClickThrough&gt;&lt;![CDATA[https://apps.apple.com/US/app/id406889139?ls=1&amp;mt=8]]&gt;&lt;/ClickThrough&gt;                      &lt;ClickTracking&gt;&lt;![CDATA[https://click.liftoff.io/v1/campaign_click/WWAzQPy8e68HYCVsFVjL2bU69fYyp23ac3uRi1mErd7SPrl7RV6ja7jahKvtvBCmFyV6BY0JWSImovn-QCJOXDQ_anhaaHqHojADNPtVVo-oGpPkJpDJzEr03YKao0qRDAn1PRhnJojAtdpB2oPvcVhGvoNHQ1zX9oBKIL7Kj0gj3u3KnCrMxSVoBSsKx2TqHntObmBUEPwCr7An6KRq3MDPtzAtuhmUBEshYpmos5T8P9JHdkc-Vv-OBR6y0Gf2zQNmQjitlggdUa-xVlOVafZP6FRRCMjB8ovqTyX0PU-EkufsjgdczXfnucpIt98_eVAL0kTKAzsWJTm6FA_H8j1v0jv0pH-9JLRfWWQjqjzSjVGQF8vJJZgfp0h5ClgcCkBS8SdYXDLeto2yff8Abh-frwlaACgM7KRr68FuWdZgXIJhhHCawDvUzIQr0OZdSJxAdM_-tk6h7FLwzOz2ubTq_qLYbUcXxqCGAxeC-jIR6GNT8l8e6PqwPZZmeH7XEJKESv-CzhlE0LfKS5-aB3cjR-a8IBcGW33RvgYWjk4PyR1PUTFyzerOOk6Pgxh7Qggypi9DzcAddGtjfHzpzRySs2HWgHMoemFSp4v7?vast_el=1]]&gt;&lt;/ClickTracking&gt;                   &lt;/VideoClicks&gt;                &lt;/Linear&gt;             &lt;/Creative&gt;             &lt;Creative&gt;                &lt;CompanionAds&gt;                   &lt;Companion assetWidth=&quot;1080&quot; assetHeight=&quot;1920&quot; width=&quot;320&quot; height=&quot;480&quot;&gt;                      &lt;StaticResource creativeType=&quot;image/jpeg&quot;&gt;&lt;![CDATA[https://cdn.liftoff-creatives.io/customers/e039ca02d2/image/lambda_jpg_65/05aa9e649f6850364ed2.jpg]]&gt;&lt;/StaticResource&gt;                      &lt;CompanionClickThrough&gt;&lt;![CDATA[https://apps.apple.com/US/app/id406889139?ls=1&amp;mt=8]]&gt;&lt;/CompanionClickThrough&gt;                      &lt;CompanionClickTracking&gt;&lt;![CDATA[https://click.liftoff.io/v1/campaign_click/WWAzQPy8e68HYCVsFVjL2bU69fYyp23ac3uRi1mErd7SPrl7RV6ja7jahKvtvBCmFyV6BY0JWSImovn-QCJOXDQ_anhaaHqHojADNPtVVo-oGpPkJpDJzEr03YKao0qRDAn1PRhnJojAtdpB2oPvcVhGvoNHQ1zX9oBKIL7Kj0gj3u3KnCrMxSVoBSsKx2TqHntObmBUEPwCr7An6KRq3MDPtzAtuhmUBEshYpmos5T8P9JHdkc-Vv-OBR6y0Gf2zQNmQjitlggdUa-xVlOVafZP6FRRCMjB8ovqTyX0PU-EkufsjgdczXfnucpIt98_eVAL0kTKAzsWJTm6FA_H8j1v0jv0pH-9JLRfWWQjqjzSjVGQF8vJJZgfp0h5ClgcCkBS8SdYXDLeto2yff8Abh-frwlaACgM7KRr68FuWdZgXIJhhHCawDvUzIQr0OZdSJxAdM_-tk6h7FLwzOz2ubTq_qLYbUcXxqCGAxeC-jIR6GNT8l8e6PqwPZZmeH7XEJKESv-CzhlE0LfKS5-aB3cjR-a8IBcGW33RvgYWjk4PyR1PUTFyzerOOk6Pgxh7Qggypi9DzcAddGtjfHzpzRySs2HWgHMoemFSp4v7?vast_el=2]]&gt;&lt;/CompanionClickTracking&gt;                      &lt;TrackingEvents&gt;                         &lt;Tracking event=&quot;creativeView&quot;&gt;&lt;![CDATA[https://adexp.liftoff.io/event/vast/staticEndscreenView/71b4a8CIPnCRIgYmExNTI5ZjI2Y2UxNGQyMTk3MDhjMjE1MTVmZjZmM2IY4NKr3OwwIHco58AUMPUJOgoxNTYwNTQ1MTE4Qh5jcnNlcnZlLWlvcy1wb2QtZm9yY2VkLWNvbnRyb2xCGm1pbnRlZ3JhbC1zdG9yZWtpdC1jb250cm9sQiNtYWRsaWItbG9jYWxpemUtZ2VuZXJpYy1jdGEtY29udHJvbEIaY3JzZXJ2ZS1za2FuLXBvZC1leHAtdGllcjFCGGNyc2VydmUtZGVhZHpvbmUtY29udHJvbEIbbGlmdG9mZi1tcmFpZC12Mi1leHBlcmltZW50Sgo2NWM1YWI3OTM4UAJaA01FWGABaAFyCXVzLWVhc3QtMeABAYABd5IBAmVzmAEBoQEAAAAAAACwP6oBBzMyMHg0ODCyAQVNdXNpY7oBHk11c2ljIEZNIEJveCBGaW5kIE1lZXQgQXdlc29tZcIBGXZhc3QtOTBlNDAxYTdlMzNhZDRkYmE0YjbSAQUwMzAyMNoBBXZpZGVv?playhead=[CONTENTPLAYHEAD]&amp;sr=1]]&gt;&lt;/Tracking&gt;                         &lt;Tracking event=&quot;creativeView&quot;&gt;&lt;![CDATA[https://click.liftoff.io/v1/campaign_click/WWAzQPy8e68HYCVsFVjL2bU69fYyp23ac3uRi1mErd7SPrl7RV6ja7jahKvtvBCmFyV6BY0JWSImovn-QCJOXDQ_anhaaHqHojADNPtVVo-oGpPkJpDJzEr03YKao0qRDAn1PRhnJojAtdpB2oPvcVhGvoNHQ1zX9oBKIL7Kj0gj3u3KnCrMxSVoBSsKx2TqHntObmBUEPwCr7An6KRq3MDPtzAtuhmUBEshYpmos5T8P9JHdkc-Vv-OBR6y0Gf2zQNmQjitlggdUa-xVlOVafZP6FRRCMjB8ovqTyX0PU-EkufsjgdczXfnucpIt98_eVAL0kTKAzsWJTm6FA_H8j1v0jv0pH-9JLRfWWQjqjzSjVGQF8vJJZgfp0h5ClgcCkBS8SdYXDLeto2yff8Abh-frwlaACgM7KRr68FuWdZgXIJhhHCawDvUzIQr0OZdSJxAdM_-tk6h7FLwzOz2ubTq_qLYbUcXxqCGAxeC-jIR6GNT8l8e6PqwPZZmeH7XEJKESv-CzhlE0LfKS5-aB3cjR-a8IBcGW33RvgYWjk4PyR1PUTFyzerOOk6Pgxh7Qggypi9DzcAddGtjfHzpzRySs2HWgHMoemFSp4v7?vast_el=2&amp;mac=1]]&gt;&lt;/Tracking&gt;                      &lt;/TrackingEvents&gt;                   &lt;/Companion&gt;                &lt;/CompanionAds&gt;             &lt;/Creative&gt;          &lt;/Creatives&gt;       &lt;/InLine&gt;    &lt;/Ad&gt; &lt;/VAST&gt;</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>3</ruleType>
+        <matchHeader>x-smt-adtype</matchHeader>
+        <matchValue></matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>true</matchResponse>
+        <newHeader>x-smt-adtype</newHeader>
+        <newValue>Video</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+    </rules>
+  </rewriteSet>
+</rewriteSet-array>
