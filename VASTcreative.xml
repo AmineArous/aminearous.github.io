@@ -8,10 +8,10 @@
       <Creatives>
         <Creative>
           <Linear>
-            <Duration>00:00:10</Duration>
+            <Duration>00:00:15</Duration>
             <MediaFiles>
-              <MediaFile delivery="progressive" type="video/mp4" width="640" height="480">
-                <![CDATA[https://storage.googleapis.com/gvabox/media/samples/stock.mp4]]>
+              <MediaFile delivery="progressive" type="video/mp4" width="360" height="640">
+                <![CDATA[https://cdn.liftoff-creatives.io/dev/customers/e039ca02d2/videos/mobile/ce7f8ca726b4ed34b5c8.mp4]]>
               </MediaFile>
             </MediaFiles>
           </Linear>
