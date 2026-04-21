@@ -66,13 +66,11 @@ const apps = [
         category: "cat-productivity",
         descKey: "rituo-desc",
         screenshots: [
-            "assets/Rituo1.png",
-            "assets/Rituo2.png",
-            "assets/Rituo3.png",
-            "assets/Rituo4.png",
-            "assets/Rituo5.png",
-            "assets/Rituo6.png",
-            "assets/Rituo7.png"
+            "assets/habitpace1.png",
+            "assets/habitpace2.png",
+            "assets/habitpace3.png",
+            "assets/habitpace4.png",
+            "assets/habitpace5.png"
         ]
     },
     {
