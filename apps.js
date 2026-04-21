@@ -1,7 +1,7 @@
 const apps = [
     {
         id: "youclip",
-        name: "YouClip - AI Video Summarizer",
+        name: "YouClip",
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b3/1c/a0/b31ca06c-4ff0-1c74-29b1-d141485f1800/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/youclip-ai-video-summarizer/id6762062662",
         category: "cat-productivity",
