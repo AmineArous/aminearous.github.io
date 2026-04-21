@@ -60,9 +60,9 @@ const apps = [
     },
     {
         id: "rituo",
-        name: "Rituo",
-        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/3e/0f/173e0fc2-75c2-7023-f751-e7a9a3767bf4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-        url: "https://apps.apple.com/app/rituo/id6752529512",
+        name: "HabitPace",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/49/8b/65/498b655b-b13c-87a5-1f03-6f868117c7e6/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/habitpace-daily-habits/id6752529512",
         category: "cat-productivity",
         descKey: "rituo-desc",
         screenshots: [
