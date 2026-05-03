@@ -5,6 +5,8 @@ const translations = {
         'nav-story': 'Story',
         'nav-work': 'Work',
         'nav-contact': 'Contact',
+        'nav-intro': 'Intro',
+        'nav-featured': 'Featured',
 
         // Hero
         'hero-badge': 'Available for freelance · {month} {year}',
@@ -95,6 +97,8 @@ const translations = {
         'nav-story': 'Parcours',
         'nav-work': 'Apps',
         'nav-contact': 'Contact',
+        'nav-intro': 'Intro',
+        'nav-featured': 'À la une',
 
         'hero-badge': 'Disponible en freelance · {month} {year}',
         'hero-l1': 'Code discret.',
