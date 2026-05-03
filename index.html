@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amine Arous - iOS Developer | Swift, SwiftUI, UIKit</title>
+    <title>Amine Arous — iOS Engineer | Swift, SwiftUI, UIKit</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Amine Arous - Développeur iOS Senior avec 15+ ans d'expérience. Expert Swift, SwiftUI, UIKit. Applications pour Accor, Meetic, PagesJaunes. Portfolio d'apps sur l'App Store.">
-    <meta name="keywords" content="iOS Developer, Swift, SwiftUI, UIKit, Mobile Developer, Paris, France, App Store, Amine Arous">
+    <meta name="description" content="Amine Arous — Senior iOS Engineer with 15+ years of experience. Swift, SwiftUI, UIKit. Apps for Accor, Meetic, PagesJaunes. Indie apps on the App Store.">
+    <meta name="keywords" content="iOS Engineer, Swift, SwiftUI, UIKit, Mobile Developer, Paris, France, App Store, Amine Arous">
     <meta name="author" content="Amine Arous">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://aminearous.github.io/">
@@ -18,15 +18,15 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://aminearous.github.io/">
-    <meta property="og:title" content="Amine Arous - iOS Developer">
-    <meta property="og:description" content="Développeur iOS Senior avec 15+ ans d'expérience. Expert Swift, SwiftUI, UIKit. Portfolio d'applications sur l'App Store.">
+    <meta property="og:title" content="Amine Arous — iOS Engineer">
+    <meta property="og:description" content="Senior iOS Engineer with 15+ years of experience. Swift, SwiftUI, UIKit. Indie apps on the App Store.">
     <meta property="og:image" content="https://aminearous.github.io/assets/og-image.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@AmineArous">
-    <meta name="twitter:title" content="Amine Arous - iOS Developer">
-    <meta name="twitter:description" content="Développeur iOS Senior avec 15+ ans d'expérience. Expert Swift, SwiftUI, UIKit.">
+    <meta name="twitter:title" content="Amine Arous — iOS Engineer">
+    <meta name="twitter:description" content="Senior iOS Engineer with 15+ years of experience. Swift, SwiftUI, UIKit.">
     <meta name="twitter:image" content="https://aminearous.github.io/assets/og-image.png">
 
     <!-- Structured Data -->
@@ -35,7 +35,7 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Amine Arous",
-        "jobTitle": "iOS Developer",
+        "jobTitle": "iOS Engineer",
         "url": "https://aminearous.github.io",
         "sameAs": [
             "https://www.linkedin.com/in/amine-arous-a6438971/",
@@ -46,107 +46,244 @@
     }
     </script>
 
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="top-nav">
-        <div class="container">
-            <div class="nav-controls">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-                    </svg>
-                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                    </svg>
-                </button>
-                <div class="lang-switcher">
-                    <button class="lang-btn active" data-lang="fr">FR</button>
-                    <span class="lang-separator">|</span>
-                    <button class="lang-btn" data-lang="en">EN</button>
-                </div>
+
+<div class="cursor" id="cursor"></div>
+
+<nav class="top">
+    <span class="brand"><span class="dot"></span><span data-i18n="brand">Amine Arous</span></span>
+    <span class="div"></span>
+    <a class="link" href="#story" data-i18n="nav-story">Story</a>
+    <a class="link" href="#work" data-i18n="nav-work">Work</a>
+    <a class="link" href="#contact" data-i18n="nav-contact">Contact</a>
+    <span class="div"></span>
+    <button class="langbtn" id="lang-btn">EN</button>
+    <button class="iconbtn" id="theme-btn" aria-label="Toggle theme">
+        <svg id="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+    </button>
+</nav>
+
+<aside class="progress" id="progress">
+    <a class="item active" href="#hero"><span class="dot"></span><span class="label">Intro</span></a>
+    <a class="item" href="#story"><span class="dot"></span><span class="label">Story</span></a>
+    <a class="item" href="#feature"><span class="dot"></span><span class="label">Featured</span></a>
+    <a class="item" href="#work"><span class="dot"></span><span class="label">Apps</span></a>
+    <a class="item" href="#contact"><span class="dot"></span><span class="label">Contact</span></a>
+</aside>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="blob" style="width:420px;height:420px;background:var(--orange);top:-100px;right:-120px"></div>
+    <div class="blob" style="width:380px;height:380px;background:var(--purple);top:280px;left:-140px;animation-delay:-7s"></div>
+    <div class="blob" style="width:280px;height:280px;background:var(--teal);bottom:120px;right:80px;animation-delay:-3s;opacity:0.25"></div>
+
+    <div class="badge reveal"><span class="live"></span><span data-i18n="hero-badge">Available for freelance</span></div>
+
+    <h1 id="hero-title">
+        <span class="word-reveal" style="transition-delay:0.1s"><span data-i18n="hero-l1">Native iOS,</span></span>
+        <br/>
+        <span class="word-reveal" style="transition-delay:0.25s"><em data-i18n="hero-l2">crafted by hand.</em></span>
+    </h1>
+
+    <p class="sub reveal delay-3" data-i18n="hero-sub">I'm Amine Arous — a Paris-based iOS engineer.</p>
+
+    <div class="scrolldown" data-i18n="scroll">SCROLL TO EXPLORE</div>
+</section>
+
+<!-- App detail modal -->
+<div class="modal-backdrop" id="app-modal-backdrop" aria-hidden="true"></div>
+<div class="modal" id="app-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="modal-close" onclick="closeAppModal()" aria-label="Close">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-scroll"></div>
+</div>
+
+<!-- Screenshot lightbox -->
+<div class="shot-lightbox" id="shot-lightbox" aria-hidden="true">
+    <button class="shot-lightbox-close" onclick="closeShotLightbox()" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <img alt="" />
+</div>
+
+<!-- MARQUEES -->
+<div class="marquee icons first">
+    <div class="marquee-track" id="marquee-apps"></div>
+</div>
+
+<div class="marquee text last" aria-hidden="true">
+    <div class="marquee-track">
+        <span>Swift</span><span>SwiftUI</span><span>UIKit</span><span>Combine</span><span>async/await</span><span>WidgetKit</span><span>SiriKit</span><span>StoreKit 2</span><span>GraphQL</span><span>Core Data</span>
+        <span>Swift</span><span>SwiftUI</span><span>UIKit</span><span>Combine</span><span>async/await</span><span>WidgetKit</span><span>SiriKit</span><span>StoreKit 2</span><span>GraphQL</span><span>Core Data</span>
+    </div>
+</div>
+
+<!-- STATS -->
+<section class="stats" id="stats">
+    <div class="cell reveal"><div class="num"><span class="accent">15</span></div><div class="label" data-i18n="stat-1">Years shipping</div></div>
+    <div class="cell reveal delay-1"><div class="num" id="stat-num-2">13</div><div class="label" data-i18n="stat-2">Apps on the Store</div></div>
+    <div class="cell reveal delay-2"><div class="num">5</div><div class="label" data-i18n="stat-3">Companies trusted</div></div>
+    <div class="cell reveal delay-3"><div class="num">∞</div><div class="label" data-i18n="stat-4">Lines of Swift</div></div>
+</section>
+
+<!-- CHAPTERS / STORY -->
+<section class="chapters" id="story">
+    <div class="reveal">
+        <div class="chapters-eyebrow" data-i18n="story-eyebrow">The story so far</div>
+        <h2 class="serif"><span data-i18n="story-title">Fifteen years of</span> <em data-i18n="story-title-em">building for iPhone.</em></h2>
+    </div>
+
+    <div class="chapter" data-ch="1">
+        <div class="ch reveal"><div class="ch-num">CH.01</div><div class="ch-year">2010</div></div>
+        <div class="reveal delay-1">
+            <h3 data-i18n="ch1-title"></h3>
+            <p class="body" data-i18n="ch1-body"></p>
+            <div class="meta">
+                <span class="tag">Objective-C</span><span class="tag">iOS</span><span class="tag">SQLite</span><span class="tag">Android</span>
+            </div>
+            <div class="ch-details reveal delay-2"><div class="ch-details-inner"><ul></ul></div></div>
+        </div>
+    </div>
+
+    <div class="chapter" data-ch="2">
+        <div class="ch reveal"><div class="ch-num">CH.02</div><div class="ch-year">2014</div></div>
+        <div class="reveal delay-1">
+            <h3 data-i18n="ch2-title"></h3>
+            <p class="body" data-i18n="ch2-body"></p>
+            <div class="meta">
+                <span class="tag">Objective-C</span><span class="tag">UIKit</span><span class="tag">CoreData</span>
+            </div>
+            <div class="ch-details reveal delay-2"><div class="ch-details-inner"><ul></ul></div></div>
+        </div>
+    </div>
+
+    <div class="chapter" data-ch="3">
+        <div class="ch reveal"><div class="ch-num">CH.03</div><div class="ch-year">2015 — 2022</div></div>
+        <div class="reveal delay-1">
+            <h3 data-i18n="ch3-title"></h3>
+            <p class="body" data-i18n="ch3-body"></p>
+            <div class="meta">
+                <span class="tag">Swift</span><span class="tag">Objective-C</span><span class="tag">UIKit</span><span class="tag">WidgetKit</span><span class="tag">SiriKit</span><span class="tag">Bitrise</span>
+            </div>
+            <div class="ch-details reveal delay-2"><div class="ch-details-inner"><ul></ul></div></div>
+        </div>
+    </div>
+
+    <div class="chapter" data-ch="4">
+        <div class="ch reveal"><div class="ch-num">CH.04</div><div class="ch-year">2022</div></div>
+        <div class="reveal delay-1">
+            <h3 data-i18n="ch4-title"></h3>
+            <p class="body" data-i18n="ch4-body"></p>
+            <div class="meta">
+                <span class="tag">Swift</span><span class="tag">UIKit</span><span class="tag">RxSwift</span><span class="tag">MVVM</span><span class="tag">Fastlane</span>
+            </div>
+            <div class="ch-details reveal delay-2"><div class="ch-details-inner"><ul></ul></div></div>
+        </div>
+    </div>
+
+    <div class="chapter" data-ch="5">
+        <div class="ch reveal"><div class="ch-num">CH.05</div><div class="ch-year" data-i18n="ch5-year">2023 — Now</div></div>
+        <div class="reveal delay-1">
+            <h3 data-i18n="ch5-title"></h3>
+            <p class="body" data-i18n="ch5-body"></p>
+            <div class="meta">
+                <span class="tag">Swift</span><span class="tag">SwiftUI</span><span class="tag">Combine</span><span class="tag">GraphQL</span><span class="tag">MVVM</span>
+            </div>
+            <div class="ch-details reveal delay-2"><div class="ch-details-inner"><ul></ul></div></div>
+        </div>
+    </div>
+
+    <div class="chapter" data-ch="6">
+        <div class="ch reveal"><div class="ch-num">CH.06</div><div class="ch-year" data-i18n="ch6-year">Since 2010</div></div>
+        <div class="reveal delay-1">
+            <h3 data-i18n="ch6-title"></h3>
+            <p class="body" data-i18n="ch6-body"></p>
+            <div class="meta">
+                <span class="tag">SwiftUI</span><span class="tag">StoreKit 2</span><span class="tag">RevenueCat</span><span class="tag">OpenAI</span>
+            </div>
+            <div class="ch-details reveal delay-2"><div class="ch-details-inner"><ul></ul></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- PINNED FEATURE -->
+<section class="pinned-feature" id="feature">
+    <div class="inner">
+        <div class="reveal">
+            <div class="apps-eyebrow" data-i18n="feat-eyebrow">★ Latest release</div>
+            <h2 class="serif" style="font-size:clamp(40px,6vw,72px);font-weight:600;letter-spacing:-0.03em;line-height:1;margin-top:14px"><span data-i18n="feat-title">YouClip —</span> <em style="color:var(--orange);font-style:italic" data-i18n="feat-title-em">AI that gets to the point.</em></h2>
+            <p style="font-size:17px;color:var(--ink-2);margin-top:18px;line-height:1.6;max-width:480px" data-i18n="feat-body"></p>
+            <div style="display:flex;gap:10px;margin-top:24px">
+                <a href="https://apps.apple.com/app/youclip-ai-video-summarizer/id6762062662" target="_blank" rel="noopener" style="padding:12px 22px;border-radius:100px;background:var(--ink);color:var(--bg);font-weight:600;font-size:14px;display:inline-flex;align-items:center;gap:8px"><span data-i18n="feat-cta">View on App Store</span> ↗</a>
             </div>
         </div>
-    </nav>
-
-    <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Amine Arous</h1>
-                <p class="tagline-role"><svg class="apple-icon" width="20" height="24" viewBox="0 0 814 1000" fill="currentColor"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 781.5 0 643.5 0 515.9 0 330.1 118.5 231.8 234.9 231.8c65.6 0 120.2 43.1 161.4 43.1 39.1 0 100.2-45.8 175.8-45.8 28.4 0 130.5 2.6 197.1 98.9l18.9 12.9z"/><path d="M554.1 0c5.8 59.5-17 118.1-53 158.6-36 40.5-93.1 71.5-148.3 67.5-6.5-56.2 18.3-115.4 52.1-152.5C441.8 37 504.5 4.5 554.1 0z"/></svg><span data-i18n="tagline">iOS Engineer</span></p>
-            </div>
+        <div class="icon-stack reveal delay-2">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b3/1c/a0/b31ca06c-4ff0-1c74-29b1-d141485f1800/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" style="width:240px;height:240px;left:30%;top:20%;transform:rotate(-6deg);animation: float 5s ease-in-out infinite" alt="YouClip"/>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/49/8b/65/498b655b-b13c-87a5-1f03-6f868117c7e6/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" style="width:120px;height:120px;left:0%;top:55%;transform:rotate(8deg);animation:float 6s ease-in-out infinite 1s" alt="HabitPace"/>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a7/21/7f/a7217fc7-dea0-357e-a374-9686de6d12b8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" style="width:140px;height:140px;right:0%;top:0%;transform:rotate(10deg);animation:float 6.5s ease-in-out infinite 0.5s" alt="MealWise"/>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/47/f0/b3/47f0b38a-717c-05c2-bc9f-8fb500a74f69/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" style="width:130px;height:130px;right:5%;bottom:5%;transform:rotate(-8deg);animation:float 7s ease-in-out infinite 1.5s" alt="PlayBlox"/>
         </div>
-    </header>
+    </div>
+</section>
 
-    <nav class="section-nav">
-        <div class="container">
-            <div class="nav-menu">
-                <a href="#experience" class="nav-link active" data-section="experience" data-i18n="nav-experience">Expérience</a>
-                <a href="#portfolio" class="nav-link" data-section="portfolio" data-i18n="nav-portfolio">Portfolio</a>
-                <span class="nav-indicator"></span>
-            </div>
-        </div>
-    </nav>
+<!-- APPS GRID -->
+<section class="apps" id="work">
+    <div class="apps-head reveal">
+        <div class="apps-eyebrow" data-i18n="work-eyebrow">My indie playground</div>
+        <h2 class="serif"><span data-i18n="work-title">apps,</span> <em data-i18n="work-title-em">shipped solo.</em></h2>
+    </div>
+    <div class="apps-grid" id="apps-grid">
+        <!-- populated by renderer.js -->
+    </div>
+</section>
 
-    <main>
-        <section id="experience" class="experience-section">
-            <div class="container">
-                <h2 data-i18n="nav-experience">Expérience</h2>
-                <div class="timeline">
-                    <!-- Généré dynamiquement par experience-renderer.js -->
-                </div>
-            </div>
-        </section>
+<!-- OUTRO -->
+<section class="outro" id="contact">
+    <div class="blob" style="width:600px;height:600px;background:var(--orange);left:50%;top:50%;transform:translate(-50%,-50%);opacity:0.25"></div>
+    <h2 class="reveal">
+        <span data-i18n="outro-l1">Got an iOS</span><br/>
+        <em data-i18n="outro-l2">project in mind?</em>
+    </h2>
+    <button class="email-btn reveal delay-1" id="email-btn" onclick="window.location.href='mailto:m.aminearous@gmail.com'">
+        <span>m.aminearous@gmail.com</span>
+        <span class="arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+    </button>
+    <div class="secondary reveal delay-2">
+        <span data-i18n="outro-or">or find me on</span>
+        <a href="https://www.linkedin.com/in/amine-arous-a6438971/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/AmineArous" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://x.com/AmineArous" target="_blank" rel="noopener">X / Twitter</a>
+    </div>
+</section>
 
-        <section id="portfolio" class="apps-section">
-            <div class="container">
-                <h2 data-i18n="nav-portfolio">Portfolio</h2>
-                <div class="apps-grid">
-                    <!-- Les cartes sont générées dynamiquement par renderer.js -->
-                </div>
-            </div>
-        </section>
-    </main>
+<!-- FOOTER -->
+<footer>
+    <div class="left">
+        <span class="live-time"><span class="live-dot"></span><span id="paris-time">Paris</span></span>
+        <span>·</span>
+        <span data-i18n="foot-craft">Crafted with care &amp; coffee</span>
+    </div>
+    <div>© 2026 Amine Arous</div>
+    <div class="right">
+        <a href="mailto:m.aminearous@gmail.com" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+        <a href="https://x.com/AmineArous" target="_blank" rel="noopener" aria-label="X"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a href="https://www.linkedin.com/in/amine-arous-a6438971/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg></a>
+        <a href="https://github.com/AmineArous" target="_blank" rel="noopener" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg></a>
+    </div>
+</footer>
 
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="mailto:m.aminearous@gmail.com" aria-label="Email">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                    </svg>
-                </a>
-                <a href="https://x.com/AmineArous" aria-label="X" target="_blank" rel="noopener">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/amine-arous-a6438971/" aria-label="LinkedIn" target="_blank" rel="noopener">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
-                    </svg>
-                </a>
-                <a href="https://github.com/AmineArous" aria-label="GitHub" target="_blank" rel="noopener">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                    </svg>
-                </a>
-            </div>
-            <p data-i18n="footer">&copy; 2025 Amine Arous. Tous droits réservés.</p>
-        </div>
-    </footer>
-
-    <script src="apps.js"></script>
-    <script src="cards/card-default.js"></script>
-    <script src="app-modal.js"></script>
-    <script src="renderer.js"></script>
-    <script src="experiences.js"></script>
-    <script src="experience-renderer.js"></script>
-    <script src="i18n.js"></script>
-    <script src="theme.js"></script>
-    <script src="navigation.js"></script>
+<script src="apps.js"></script>
+<script src="i18n.js"></script>
+<script src="renderer.js"></script>
 </body>
 </html>

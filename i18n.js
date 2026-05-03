@@ -1,129 +1,173 @@
 const translations = {
-    fr: {
-        tagline: " iOS Engineer",
-        "tagline-sub": "Passionné par l'écosystème Apple",
-        experience: "Expérience Professionnelle",
-        myApps: "Mes Applications",
-        footer: "© 2025 Amine Arous. Tous droits réservés.",
-        "nav-experience": "Expérience",
-        "nav-portfolio": "Portfolio",
-        "exp-accor-role": "Senior iOS Developer",
-        "exp-accor-desc": "Application All.com - Optimisation de l'architecture, développement de nouvelles fonctionnalités (Accor Deals, Year in Review), amélioration de la qualité.",
-        "exp-meetic-role": "Senior iOS Developer",
-        "exp-meetic-desc": "Applications Meetic, DisonsDemain, Match - Développement de fonctionnalités in-app, release manager pour 8 applications.",
-        "exp-pj-role": "Senior iOS Developer / Tech Lead",
-        "exp-pj-desc": "Application PagesJaunes iOS - Tech Lead, développement iOS 14 Widget, App Clip, extension Siri, maintenance CI/CD Bitrise.",
-        "exp-stime-role": "Senior Mobile Developer",
-        "exp-stime-desc": "Application Drive Intermarché - Gestion des lots, modification de commandes, gestion de stock.",
-        "exp-accor-details": "• Développement de la feature Accor Deals (offres promotionnelles)\n• Implémentation du Year in Review personnalisé\n• Refactoring de l'architecture vers MVVM + Combine\n• Migration progressive vers SwiftUI\n• Amélioration de la couverture de tests unitaires",
-        "exp-meetic-details": "• Release manager pour 8 applications (Meetic, DisonsDemain, Match...)\n• Développement de nouvelles fonctionnalités de matching\n• Intégration de A/B testing pour optimiser les conversions\n• Automatisation des releases avec Fastlane\n• Collaboration avec les équipes produit internationales",
-        "exp-pj-details": "• Tech Lead d'une équipe de 4 développeurs iOS\n• Développement du Widget iOS 14 (WidgetKit)\n• Création de l'App Clip pour la recherche rapide\n• Intégration de Siri Shortcuts\n• Mise en place et maintenance du CI/CD avec Bitrise\n• Migration progressive d'Objective-C vers Swift",
-        "exp-stime-details": "• Développement de la fonctionnalité de gestion des lots\n• Implémentation de la modification de commandes en temps réel\n• Intégration du système de gestion de stock\n• Optimisation des performances de l'application\n• Collaboration avec l'équipe backend sur les APIs REST",
-        "exp-smartfingers-role": "Développeur Mobile",
-        "exp-smartfingers-desc": "Agence mobile - Développement d'applications iOS/Android pour Le Journal du Dimanche, Renault Trucks, Pathé, Krys...",
-        "exp-smartfingers-details": "• Développement d'applications iPhone : Le Journal du Dimanche, Unifrance, Le Petit Paumé, Grazia Shopping\n• Développement d'applications iPad : Renault Trucks, Volvo, Pathé, Krys\n• Développement de web services et gestion de bases de données\n• Responsabilité opérationnelle de multiples projets mobiles\n• Veille technologique",
-        "cat-productivity": "Productivité",
-        "cat-health": "Santé & Fitness",
-        "cat-games": "Jeux",
-        "goal-price": "2,99 €",
-        "rituo-desc": "Construisez la meilleure version de vous-même. Suivi d'habitudes intelligent avec coach IA, statistiques détaillées et Apple Watch.",
-        "mealwise-desc": "Suivez votre nutrition quotidienne avec une app qui respecte votre vie privée. Vos données restent sur vos appareils.",
-        "tictactoe-desc": "Le jeu de morpion ultime avec des graphismes étonnants. Jouez en solo ou affrontez des joueurs du monde entier.",
-        "warship-desc": "Embarquez pour une aventure maritime palpitante ! Jouez en solo ou défiez des joueurs du monde entier.",
-        "crossword-desc": "Prêt pour un nouveau défi de mots ? Des grilles dynamiques générées à l'infini pour des heures de divertissement.",
-        "motscroises-desc": "Des grilles de mots croisés générées aléatoirement avec trois niveaux de difficulté pour les amateurs de langue française.",
-        "motscroisesfr-desc": "Grilles thématiques avec défi quotidien et 3 niveaux de difficulté pour booster votre vocabulaire.",
-        "crosswordplay-desc": "Jeu de mots croisés addictif avec des milliers de grilles quotidiennes, trois niveaux de difficulté et mode hors ligne.",
-        "brainquiz-desc": "Un jeu de puzzle innovant et addictif qui met à l'épreuve vos compétences logiques et mathématiques.",
-        "goal-desc": "Un jeu de puzzle où vous devez marquer des buts sur un terrain de foot 2D. Stratégie et réflexion au rendez-vous !",
-        "playblox-desc": "Empile des blocs colorés, nettoie les lignes et vise le meilleur score dans ce puzzle arcade rapide.",
-        "youclip-desc": "Transformez les vidéos YouTube en résumés IA, dans la langue et le format de votre choix.",
-        "puzzlo-desc": "Un jeu fun et addictif qui met au défi vos compétences en puzzle. Combinez les blocs pour atteindre 4096 !",
-        "screenshots-coming": "Screenshots bientôt disponibles"
-    },
     en: {
-        tagline: " iOS Engineer",
-        "tagline-sub": "Apple ecosystem enthusiast",
-        experience: "Professional Experience",
-        myApps: "My Applications",
-        footer: "© 2025 Amine Arous. All rights reserved.",
-        "nav-experience": "Experience",
-        "nav-portfolio": "Portfolio",
-        "exp-accor-role": "Senior iOS Developer",
-        "exp-accor-desc": "All.com App - Architecture optimization, new features development (Accor Deals, Year in Review), quality improvement.",
-        "exp-meetic-role": "Senior iOS Developer",
-        "exp-meetic-desc": "Meetic, DisonsDemain, Match Apps - In-app features development, release manager for 8 applications.",
-        "exp-pj-role": "Senior iOS Developer / Tech Lead",
-        "exp-pj-desc": "PagesJaunes iOS App - Tech Lead, iOS 14 Widget, App Clip, Siri extension development, CI/CD Bitrise maintenance.",
-        "exp-stime-role": "Senior Mobile Developer",
-        "exp-stime-desc": "Drive Intermarché App - Lot management, order modification, stock management.",
-        "exp-accor-details": "• Development of the Accor Deals feature (promotional offers)\n• Implementation of personalized Year in Review\n• Architecture refactoring to MVVM + Combine\n• Progressive migration to SwiftUI\n• Improvement of unit test coverage",
-        "exp-meetic-details": "• Release manager for 8 applications (Meetic, DisonsDemain, Match...)\n• Development of new matching features\n• A/B testing integration to optimize conversions\n• Release automation with Fastlane\n• Collaboration with international product teams",
-        "exp-pj-details": "• Tech Lead of a team of 4 iOS developers\n• Development of iOS 14 Widget (WidgetKit)\n• Creation of App Clip for quick search\n• Integration of Siri Shortcuts\n• Setup and maintenance of CI/CD with Bitrise\n• Progressive migration from Objective-C to Swift",
-        "exp-stime-details": "• Development of the lot management feature\n• Implementation of real-time order modification\n• Integration of stock management system\n• Application performance optimization\n• Collaboration with backend team on REST APIs",
-        "exp-smartfingers-role": "Mobile Developer",
-        "exp-smartfingers-desc": "Mobile agency - iOS/Android app development for Le Journal du Dimanche, Renault Trucks, Pathé, Krys...",
-        "exp-smartfingers-details": "• iPhone app development: Le Journal du Dimanche, Unifrance, Le Petit Paumé, Grazia Shopping\n• iPad app development: Renault Trucks, Volvo, Pathé, Krys\n• Web services development and database management\n• Operational responsibility for multiple mobile projects\n• Technology watch",
-        "cat-productivity": "Productivity",
-        "cat-health": "Health & Fitness",
-        "cat-games": "Games",
-        "goal-price": "$2.99",
-        "rituo-desc": "Build the best version of yourself. Smart habit tracking with AI coach, detailed statistics and Apple Watch support.",
-        "mealwise-desc": "Track your daily nutrition with an app that respects your privacy. Your data stays on your devices.",
-        "tictactoe-desc": "The ultimate Tic Tac Toe game with stunning graphics. Play solo or challenge players from around the world.",
-        "warship-desc": "Embark on an exciting maritime adventure! Play solo or challenge players from around the world.",
-        "crossword-desc": "Ready for a new word challenge? Infinite dynamic grids generated for hours of entertainment.",
-        "motscroises-desc": "Randomly generated crossword grids with three difficulty levels for French language enthusiasts.",
-        "motscroisesfr-desc": "Themed crossword grids with a daily challenge and 3 difficulty levels to grow your vocabulary.",
-        "crosswordplay-desc": "Addictive crossword game with thousands of daily puzzles, three difficulty levels, and offline mode.",
-        "brainquiz-desc": "An innovative and addictive puzzle game that tests your logical and mathematical skills.",
-        "goal-desc": "A puzzle game where you score goals on a 2D soccer field. Strategy and thinking await!",
-        "playblox-desc": "Stack colorful blocks, clear lines, and chase high scores in a fast-paced arcade puzzle.",
-        "youclip-desc": "Turn YouTube videos into AI summaries, in the language and format of your choice.",
-        "puzzlo-desc": "A fun and addictive game that challenges your puzzle skills. Combine blocks to reach 4096!",
-        "screenshots-coming": "Screenshots coming soon"
+        // Brand & nav
+        'brand': 'Amine Arous',
+        'nav-story': 'Story',
+        'nav-work': 'Work',
+        'nav-contact': 'Contact',
+
+        // Hero
+        'hero-badge': 'Available for freelance · {month} {year}',
+        'hero-l1': 'Quiet code.',
+        'hero-l2': 'Loud impact.',
+        'hero-sub': "I'm Amine Arous — a Paris-based iOS engineer with 15 years of shipping. From Accor to my own indie apps, I build products that feel right.",
+        'scroll': 'SCROLL TO EXPLORE',
+
+        // Stats
+        'stat-1': 'Years shipping',
+        'stat-2': 'Apps on the Store',
+        'stat-3': 'Companies trusted',
+        'stat-4': 'Lines of Swift',
+
+        // Story
+        'story-eyebrow': 'The story so far',
+        'story-title': 'Fifteen years of',
+        'story-title-em': 'shaping for mobile.',
+
+        // Chapters (CH.01 = 2010 Smartfingers; corrected age 28)
+        'ch1-title': 'First app on the Store.',
+        'ch1-body': 'Smartfingers Media · Insign Group. Objective-C, an iPhone 4, and the magic of seeing your code travel in someone\'s pocket. Four years of shipping mobile apps for clients across France.',
+        'ch1-details': '• iPhone app development: Le Journal du Dimanche, Unifrance, Le Petit Paumé, Grazia Shopping\n• iPad app development: Renault Trucks, Volvo, Pathé, Krys\n• Web services development and database management\n• Operational responsibility for multiple mobile projects\n• Technology watch',
+
+        'ch2-title': 'Retail at scale — STIME.',
+        'ch2-body': 'A year inside Les Mousquetaires (Intermarché) building retail apps used in stores. CoreData, REST APIs, and learning what production-grade really means.',
+        'ch2-details': '• Development of the lot management feature\n• Implementation of real-time order modification\n• Integration of stock management system\n• Application performance optimization\n• Collaboration with backend team on REST APIs',
+
+        'ch3-title': 'Solocal Group — PagesJaunes.',
+        'ch3-body': 'From Objective-C to Swift. From UIKit to Widgets and Siri Shortcuts. I helped lead the migration of a legacy app used by millions of French users — and learned to ship at scale, week after week.',
+        'ch3-details': '• Tech Lead of a team of 4 iOS developers\n• Development of iOS 14 Widget (WidgetKit)\n• Creation of App Clip for quick search\n• Integration of Siri Shortcuts\n• Setup and maintenance of CI/CD with Bitrise\n• Progressive migration from Objective-C to Swift',
+
+        'ch4-title': 'Match Group — Meetic.',
+        'ch4-body': 'A year inside the dating giant. Reactive architecture (RxSwift, MVVM), Fastlane pipelines, and shipping features to millions of European users.',
+        'ch4-details': '• Release manager for 8 applications (Meetic, DisonsDemain, Match...)\n• Development of new matching features\n• A/B testing integration to optimize conversions\n• Release automation with Fastlane\n• Collaboration with international product teams',
+
+        'ch5-year': 'Since 2023',
+        'ch5-title': 'Today · Senior iOS @ Accor.',
+        'ch5-body': 'Crafting the next-generation Accor app for travelers worldwide. SwiftUI-first, Combine, GraphQL, MVVM. Polishing every interaction so booking a hotel feels effortless.',
+        'ch5-details': '• Development of the Accor Deals feature (promotional offers)\n• Implementation of personalized Year in Review\n• Architecture refactoring to MVVM + Combine\n• Progressive migration to SwiftUI\n• Improvement of unit test coverage',
+
+        'ch6-year': 'Since 2010',
+        'ch6-title': 'Indie · {count} apps and counting.',
+        'ch6-body': "After hours, I build my own apps. Games, productivity, AI experiments. It's where I stay sharp, take risks, and have fun. Every app on the App Store under my own name.",
+        'ch6-details': '• {count} apps shipped solo on the App Store\n• SwiftUI-first, StoreKit 2 monetisation\n• Integrated OpenAI and RevenueCat\n• Designed, built, marketed end-to-end\n• Continuous experimentation with new APIs',
+
+        // Featured
+        'feat-eyebrow': '★ Latest release',
+        'feat-title': 'YouClip —',
+        'feat-title-em': 'AI that gets to the point.',
+        'feat-body': 'Drop a YouTube link, get a structured summary in seconds. My playground for SwiftUI animations, Combine streams, and StoreKit 2 — shipped solo in 2025.',
+        'feat-cta': 'View on App Store',
+
+        // Apps grid
+        'work-eyebrow': 'My indie playground',
+        'work-title': '{count} apps,',
+        'work-title-em': 'shipped solo.',
+
+        // Outro / footer
+        'outro-l1': 'Got an iOS',
+        'outro-l2': 'project in mind?',
+        'outro-or': 'or find me on',
+        'foot-craft': 'Crafted with care & coffee',
+
+        // Chapter related apps labels
+        'ch-related-label': 'Apps shipped during this chapter',
+        'ch-download-label': 'Download',
+
+        // Modal labels
+        'modal-screenshots': 'Screenshots',
+        'modal-about': 'About this app',
+        'modal-features': "What's inside",
+        'modal-built': 'Built with',
+        'modal-stat-year': 'Year',
+        'modal-stat-cat': 'Category',
+        'modal-stat-by': 'Made by',
+        'modal-stat-by-value': 'Solo',
+        'modal-cta-store': 'View on App Store',
+        'modal-close': 'Close',
+
+        // Months (for hero badge)
+        'month-1': 'January', 'month-2': 'February', 'month-3': 'March', 'month-4': 'April',
+        'month-5': 'May', 'month-6': 'June', 'month-7': 'July', 'month-8': 'August',
+        'month-9': 'September', 'month-10': 'October', 'month-11': 'November', 'month-12': 'December'
+    },
+    fr: {
+        'brand': 'Amine Arous',
+        'nav-story': 'Parcours',
+        'nav-work': 'Apps',
+        'nav-contact': 'Contact',
+
+        'hero-badge': 'Disponible en freelance · {month} {year}',
+        'hero-l1': 'Code discret.',
+        'hero-l2': 'Impact fort.',
+        'hero-sub': "Je m'appelle Amine Arous — ingénieur iOS à Paris, 15 ans à publier des apps. D'Accor à mes propres apps indé, je conçois des produits qui font juste.",
+        'scroll': 'FAITES DÉFILER',
+
+        'stat-1': 'Ans à publier',
+        'stat-2': "Apps sur l'App Store",
+        'stat-3': 'Entreprises de confiance',
+        'stat-4': 'Lignes de Swift',
+
+        'story-eyebrow': "L'histoire jusqu'ici",
+        'story-title': 'Quinze ans à',
+        'story-title-em': 'façonner pour le mobile.',
+
+        'ch1-title': 'Première app sur le Store.',
+        'ch1-body': "Smartfingers Media · Insign Group. Objective-C, un iPhone 4, et la magie de voir son code voyager dans la poche des gens. Quatre ans à publier des apps mobiles pour des clients partout en France.",
+        'ch1-details': "• Développement d'applications iPhone : Le Journal du Dimanche, Unifrance, Le Petit Paumé, Grazia Shopping\n• Développement d'applications iPad : Renault Trucks, Volvo, Pathé, Krys\n• Développement de web services et gestion de bases de données\n• Responsabilité opérationnelle de multiples projets mobiles\n• Veille technologique",
+
+        'ch2-title': "Le retail à l'échelle — STIME.",
+        'ch2-body': "Un an chez Les Mousquetaires (Intermarché) à concevoir des apps utilisées en magasin. CoreData, API REST, et la découverte du vrai niveau production.",
+        'ch2-details': "• Développement de la fonctionnalité de gestion des lots\n• Implémentation de la modification de commandes en temps réel\n• Intégration du système de gestion de stock\n• Optimisation des performances de l'application\n• Collaboration avec l'équipe backend sur les APIs REST",
+
+        'ch3-title': 'Groupe Solocal — PagesJaunes.',
+        'ch3-body': "D'Objective-C à Swift. D'UIKit aux Widgets et Raccourcis Siri. J'ai accompagné la migration d'une app legacy utilisée par des millions de Français — et appris à livrer à grande échelle, semaine après semaine.",
+        'ch3-details': "• Tech Lead d'une équipe de 4 développeurs iOS\n• Développement du Widget iOS 14 (WidgetKit)\n• Création de l'App Clip pour la recherche rapide\n• Intégration de Siri Shortcuts\n• Mise en place et maintenance du CI/CD avec Bitrise\n• Migration progressive d'Objective-C vers Swift",
+
+        'ch4-title': 'Match Group — Meetic.',
+        'ch4-body': "Un an chez le géant de la rencontre. Architecture réactive (RxSwift, MVVM), pipelines Fastlane, et features livrées à des millions d'utilisateurs européens.",
+        'ch4-details': "• Release manager pour 8 applications (Meetic, DisonsDemain, Match...)\n• Développement de nouvelles fonctionnalités de matching\n• Intégration de A/B testing pour optimiser les conversions\n• Automatisation des releases avec Fastlane\n• Collaboration avec les équipes produit internationales",
+
+        'ch5-year': 'Depuis 2023',
+        'ch5-title': "Aujourd'hui · iOS Senior chez Accor.",
+        'ch5-body': "Construire l'app Accor de nouvelle génération pour les voyageurs du monde entier. SwiftUI d'abord, Combine, GraphQL, MVVM. Soigner chaque interaction pour que réserver un hôtel semble évident.",
+        'ch5-details': "• Développement de la feature Accor Deals (offres promotionnelles)\n• Implémentation du Year in Review personnalisé\n• Refactoring de l'architecture vers MVVM + Combine\n• Migration progressive vers SwiftUI\n• Amélioration de la couverture de tests unitaires",
+
+        'ch6-year': 'Depuis 2010',
+        'ch6-title': "Indé · {count} apps, et ça continue.",
+        'ch6-body': "Après le boulot, je construis mes propres apps. Jeux, productivité, expériences IA. C'est là que je teste, je prends des risques, et je m'amuse. Chaque app publiée sur l'App Store sous mon propre nom.",
+        'ch6-details': "• {count} apps publiées seul sur le App Store\n• SwiftUI-first, monétisation StoreKit 2\n• Intégration de OpenAI et RevenueCat\n• Design, dev, marketing — bout en bout\n• Expérimentation continue avec les nouvelles APIs",
+
+        'feat-eyebrow': '★ Dernière sortie',
+        'feat-title': 'YouClip —',
+        'feat-title-em': "l'IA qui va à l'essentiel.",
+        'feat-body': "Collez un lien YouTube, obtenez un résumé structuré en quelques secondes. Mon terrain de jeu pour les animations SwiftUI, les streams Combine et StoreKit 2 — publié en solo en 2025.",
+        'feat-cta': "Voir sur l'App Store",
+
+        'work-eyebrow': 'Mon terrain de jeu indé',
+        'work-title': '{count} apps,',
+        'work-title-em': 'publiées en solo.',
+
+        'outro-l1': 'Un projet iOS',
+        'outro-l2': 'en tête ?',
+        'outro-or': 'ou trouvez-moi sur',
+        'foot-craft': 'Conçu avec soin et café',
+
+        'ch-related-label': 'Apps publiées pendant ce chapitre',
+        'ch-download-label': 'Télécharger',
+
+        'modal-screenshots': "Captures d'écran",
+        'modal-about': 'À propos',
+        'modal-features': 'Ce qui se cache dedans',
+        'modal-built': 'Construit avec',
+        'modal-stat-year': 'Année',
+        'modal-stat-cat': 'Catégorie',
+        'modal-stat-by': 'Par',
+        'modal-stat-by-value': 'Solo',
+        'modal-cta-store': "Voir sur l'App Store",
+        'modal-close': 'Fermer',
+
+        'month-1': 'Janvier', 'month-2': 'Février', 'month-3': 'Mars', 'month-4': 'Avril',
+        'month-5': 'Mai', 'month-6': 'Juin', 'month-7': 'Juillet', 'month-8': 'Août',
+        'month-9': 'Septembre', 'month-10': 'Octobre', 'month-11': 'Novembre', 'month-12': 'Décembre'
     }
 };
-
-let currentLang = 'fr';
-
-function setLanguage(lang) {
-    currentLang = lang;
-    document.documentElement.lang = lang;
-
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-            el.textContent = translations[lang][key];
-        }
-    });
-
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.lang === lang);
-    });
-
-    // Update App Store badges (handles both language and theme)
-    if (typeof updateAppStoreBadges === 'function') {
-        updateAppStoreBadges();
-    }
-
-    localStorage.setItem('preferred-lang', lang);
-}
-
-document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
-});
-
-// Detect browser/device language
-function getDefaultLanguage() {
-    const browserLang = navigator.language || navigator.userLanguage;
-    // Check if browser language starts with 'fr' (fr, fr-FR, fr-CA, etc.)
-    return browserLang.startsWith('fr') ? 'fr' : 'en';
-}
-
-// Apply language after DOM is fully loaded (including dynamic content)
-document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('preferred-lang') || getDefaultLanguage();
-    // Small delay to ensure dynamic content is rendered
-    setTimeout(() => setLanguage(savedLang), 10);
-});
