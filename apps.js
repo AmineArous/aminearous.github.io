@@ -274,7 +274,5 @@ const PRO_APPS = [
     { n: 'ALL — Accor Hotels',  c: 'Accor · 2023→',          q: 'accor all hotels',      bundle: 'com.accor.fr',       color: '#1c1c4f' },
     { n: 'Meetic',              c: 'Match Group · 2022',     q: 'meetic',                bundle: 'com.meetic.meetic',  color: '#ff5b86' },
     { n: 'PagesJaunes',         c: 'Solocal · 2015→22',      q: 'pagesjaunes',           bundle: 'com.pagesjaunes.app', color: '#ffcc00' },
-    { n: 'Mappy',               c: 'Solocal · 2015→22',      q: 'mappy plans',           bundle: 'com.mappy.app',      color: '#ff6b35' },
-    { n: 'Intermarché',         c: 'STIME · 2014→15',        q: 'intermarché courses',   bundle: 'com.intermarche.fr', color: '#e30613' },
-    { n: 'Insign Mobile',       c: 'Smartfingers · 2010→14', q: 'insign group',          bundle: '',                   color: '#0066cc' }
+    { n: 'Intermarché',         c: 'STIME · 2014→15',        q: 'intermarché courses',   bundle: 'com.intermarche.fr', color: '#e30613' }
 ];

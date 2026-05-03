@@ -5,8 +5,8 @@ const sections = ['hero', 'story', 'feature', 'work', 'contact'];
 
 // Chapter index → PRO_APPS index. CH.01 (Smartfingers) and CH.06 (indie) have no related.
 const CH_RELATED = {
-    2: [4],   // STIME → Intermarché
-    3: [2],   // PagesJaunes (no Mappy per user request)
+    2: [3],   // STIME → Intermarché
+    3: [2],   // PagesJaunes
     4: [1],   // Meetic
     5: [0]    // Accor
 };
