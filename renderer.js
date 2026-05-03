@@ -399,7 +399,7 @@ function initProgressNav() {
                 items.forEach((it, i) => it.classList.toggle('active', i === idx));
             }
         });
-    }, { threshold: 0.4 });
+    }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
     sections.forEach(id => {
         const el = document.getElementById(id);
         if (el) io.observe(el);
