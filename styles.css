@@ -130,7 +130,7 @@ nav.top .langbtn.active { background: var(--ink); color: var(--bg); }
 .marquee::before { left: 0; background: linear-gradient(90deg, var(--bg), transparent); }
 .marquee::after  { right: 0; background: linear-gradient(-90deg, var(--bg), transparent); }
 .marquee-track { display: flex; gap: 48px; width: max-content; align-items: center; will-change: transform; }
-.marquee.text .marquee-track { animation: marqueeXReverse 38s linear infinite; gap: 60px; }
+.marquee.text .marquee-track { animation: marqueeXReverse 65s linear infinite; gap: 60px; }
 .marquee.icons .marquee-track { animation: marqueeX 65s linear infinite; gap: 36px; }
 .marquee.text span { font-family: 'Fraunces', serif; font-size: 32px; font-weight: 600; letter-spacing: -0.02em; color: var(--ink-3); white-space: nowrap; display: flex; align-items: center; gap: 60px; }
 .marquee.text span::after { content: '✦'; color: var(--orange); font-size: 18px; }

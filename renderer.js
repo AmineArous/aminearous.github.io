@@ -51,7 +51,6 @@ function buildAppsMarquee() {
             : `<div class="m-fallback" style="background:${a.color}">${initials(a.name)}</div>`;
         return `<a class="m-icon" data-kind="${a.kind}" data-mix-idx="${idx}" href="#" aria-label="${a.name}">
             ${visual}
-            <span class="m-label">${a.name}<span class="m-tag">${a.ctx}</span></span>
         </a>`;
     }).join('');
 
