@@ -17,6 +17,12 @@ function t(key) {
     return dict[key] !== undefined ? dict[key] : key;
 }
 
+// App fields are { en, fr } pairs
+function loc(field) {
+    if (!field) return field;
+    return field[currentLang] !== undefined ? field[currentLang] : field.en;
+}
+
 function substitute(str) {
     if (!str) return '';
     const now = new Date();
@@ -113,9 +119,16 @@ function buildAppsGrid() {
         const card = document.createElement('a');
         card.className = 'app-card reveal';
         card.href = '#';
-        card.innerHTML = `<img src="${a.icon}" alt="${a.name}"/><div class="name">${a.name}</div><div class="cat">${a.c}</div>`;
+        card.innerHTML = `<img src="${a.icon}" alt="${a.name}"/><div class="name">${a.name}</div><div class="cat">${loc(a.c)}</div>`;
         card.addEventListener('click', (e) => { e.preventDefault(); openAppModal(a); });
         grid.appendChild(card);
+    });
+}
+
+// Cards keep their reveal state, only the category text follows the language
+function updateAppsGridCategories() {
+    document.querySelectorAll('#apps-grid .app-card .cat').forEach((el, i) => {
+        el.textContent = loc(apps[i].c);
     });
 }
 
@@ -137,7 +150,7 @@ function openAppModal(a) {
     const m = modalEl();
     m.style.setProperty('--app-accent', a.accent || 'var(--orange)');
 
-    const featuresHTML = (a.features || []).map(f => `
+    const featuresHTML = (loc(a.features) || []).map(f => `
         <div class="modal-feature">
             <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
             <span>${f}</span>
@@ -160,7 +173,7 @@ function openAppModal(a) {
 
     const statsHTML = `
         <div class="s"><div class="s-label">${t('modal-stat-year')}</div><div class="s-value"><em>${a.y || '—'}</em></div></div>
-        <div class="s"><div class="s-label">${t('modal-stat-cat')}</div><div class="s-value">${a.c}</div></div>
+        <div class="s"><div class="s-label">${t('modal-stat-cat')}</div><div class="s-value">${loc(a.c)}</div></div>
         <div class="s"><div class="s-label">${t('modal-stat-by')}</div><div class="s-value">${t('modal-stat-by-value')}</div></div>`;
 
     m.querySelector('.modal-scroll').innerHTML = `
@@ -168,9 +181,9 @@ function openAppModal(a) {
             <div class="modal-hero-inner">
                 <img class="modal-icon" src="${a.icon}" alt="${a.name}"/>
                 <div class="modal-meta">
-                    <span class="modal-cat"><span class="dot"></span>${a.c}</span>
+                    <span class="modal-cat"><span class="dot"></span>${loc(a.c)}</span>
                     <h2 class="modal-name">${a.name}</h2>
-                    <p class="modal-tagline">${a.tagline || ''}</p>
+                    <p class="modal-tagline">${loc(a.tagline) || ''}</p>
                     <div class="modal-actions">${ctaHTML}</div>
                 </div>
             </div>
@@ -186,10 +199,10 @@ function openAppModal(a) {
 
             ${a.desc ? `<div class="modal-section">
                 <div class="modal-eyebrow">${t('modal-about')}</div>
-                <p>${a.desc}</p>
+                <p>${loc(a.desc)}</p>
             </div>` : ''}
 
-            ${a.features && a.features.length ? `<div class="modal-section">
+            ${a.features ? `<div class="modal-section">
                 <h4>${t('modal-features')}</h4>
                 <div class="modal-features">${featuresHTML}</div>
             </div>` : ''}
@@ -323,6 +336,7 @@ function setLang(lang) {
     if (langBtn) langBtn.textContent = lang.toUpperCase();
     applyI18n();
     renderChapters();
+    updateAppsGridCategories();
     localStorage.setItem('preferred-lang', lang);
 }
 
