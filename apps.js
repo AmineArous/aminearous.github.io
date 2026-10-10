@@ -30,9 +30,9 @@ const apps = [
         y: "2026",
         accent: "#ff3b6b",
         tagline: "Drop a YouTube link, get a structured summary in seconds.",
-        desc: "My playground for SwiftUI, OpenAI streaming and StoreKit 2. Built end-to-end in a few weekends — from API design to App Store submission.",
+        desc: "My playground for SwiftUI, Apple Foundation Models and StoreKit 2. Built end-to-end in a few weekends — from API design to App Store submission.",
         features: ["AI-generated chapters", "Key takeaways", "Read or listen", "Share as Markdown"],
-        tech: ["SwiftUI", "OpenAI", "StoreKit 2", "Combine"],
+        tech: ["SwiftUI", "Foundation Models", "StoreKit 2", "Combine"],
         screenshots: [
             "assets/youclip1.png",
             "assets/youclip2.png",
@@ -72,9 +72,9 @@ const apps = [
         y: "2025",
         accent: "#f59e0b",
         tagline: "Block puzzle, reimagined for short coffee breaks.",
-        desc: "Tactile haptics, satisfying clear animations. A pure SpriteKit + SwiftUI playground.",
+        desc: "Tactile haptics, satisfying clear animations. A pure SwiftUI playground, drawn with Canvas.",
         features: ["Daily challenges", "Game Center", "Haptic feedback", "iCloud sync"],
-        tech: ["SpriteKit", "SwiftUI", "GameKit", "iCloud"],
+        tech: ["SwiftUI", "Canvas", "GameKit", "iCloud"],
         screenshots: [
             "assets/playblox1.webp",
             "assets/playblox2.webp",
@@ -137,7 +137,7 @@ const apps = [
         tagline: "Smart meal planning that adapts to your week.",
         desc: "Photo-to-meal logging, weekly planner and grocery lists. Built around quick capture and friction-free editing.",
         features: ["Photo logging", "Weekly planner", "Grocery export", "Macros at a glance"],
-        tech: ["SwiftUI", "VisionKit", "CoreData", "OpenAI"],
+        tech: ["SwiftUI", "VisionKit", "CoreData", "Foundation Models"],
         screenshots: [
             "assets/MealWise1.png",
             "assets/MealWise2.png",

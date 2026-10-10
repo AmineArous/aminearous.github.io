@@ -51,7 +51,7 @@ const translations = {
         'ch6-year': 'Since 2010',
         'ch6-title': 'Indie · {count} apps and counting.',
         'ch6-body': "After hours, I build my own apps. Games, productivity, AI experiments. It's where I stay sharp, take risks, and have fun. Every app on the App Store under my own name.",
-        'ch6-details': '• {count} apps shipped solo on the App Store\n• SwiftUI-first, StoreKit 2 monetisation\n• Integrated OpenAI and RevenueCat\n• Designed, built, marketed end-to-end\n• Continuous experimentation with new APIs',
+        'ch6-details': '• {count} apps shipped solo on the App Store, from idea to release\n• On-device AI with Apple Foundation Models (YouClip, MealWise)\n• Home Screen and Lock Screen widgets with WidgetKit and App Intents (Glyphwork)\n• Football game built with SpriteKit and SceneKit (Golazo)\n• Monetisation with StoreKit 2 and AdMob',
 
         // Featured
         'feat-eyebrow': '★ Latest release',
@@ -139,7 +139,7 @@ const translations = {
         'ch6-year': 'Depuis 2010',
         'ch6-title': "Indé · {count} apps, et ça continue.",
         'ch6-body': "Après le boulot, je construis mes propres apps. Jeux, productivité, expériences IA. C'est là que je teste, je prends des risques, et je m'amuse. Chaque app publiée sur l'App Store sous mon propre nom.",
-        'ch6-details': "• {count} apps publiées seul sur le App Store\n• SwiftUI-first, monétisation StoreKit 2\n• Intégration de OpenAI et RevenueCat\n• Design, dev, marketing — bout en bout\n• Expérimentation continue avec les nouvelles APIs",
+        'ch6-details': "• {count} apps publiées en solo sur l'App Store, de l'idée à la mise en ligne\n• IA embarquée sur l'iPhone avec Apple Foundation Models (YouClip, MealWise)\n• Widgets d'écran d'accueil et d'écran verrouillé avec WidgetKit et App Intents (Glyphwork)\n• Jeu de foot en SpriteKit et SceneKit (Golazo)\n• Monétisation avec StoreKit 2 et AdMob",
 
         'feat-eyebrow': '★ Dernière sortie',
         'feat-title': 'YouClip —',
