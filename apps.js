@@ -1,5 +1,26 @@
 const apps = [
     {
+        id: "glyphwork",
+        name: "Glyphwork",
+        icon: "assets/glyphwork-icon.png",
+        url: "https://apps.apple.com/app/glyphwork-widgets-themes/id6818160994",
+        category: "cat-productivity",
+        c: "Widgets · Customization",
+        y: "2026",
+        accent: "#E03A1E",
+        tagline: "Lock Screen and Home Screen widgets in 20 handcrafted themes.",
+        desc: "Pick a theme and every widget follows it: stained glass, enamel pins, luggage tags, matchboxes, playing cards and more. Each theme redraws the clock, calendar, countdown, moon, quote and zodiac widgets with its own drawings.",
+        features: ["20 handcrafted themes", "10 widgets", "Lock Screen widgets", "9 languages"],
+        tech: ["SwiftUI", "WidgetKit", "App Intents", "StoreKit 2"],
+        screenshots: [
+            "assets/glyphwork1.jpg",
+            "assets/glyphwork2.jpg",
+            "assets/glyphwork3.jpg",
+            "assets/glyphwork4.jpg",
+            "assets/glyphwork5.jpg"
+        ]
+    },
+    {
         id: "youclip",
         name: "YouClip",
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b3/1c/a0/b31ca06c-4ff0-1c74-29b1-d141485f1800/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
@@ -18,6 +39,27 @@ const apps = [
             "assets/youclip3.png",
             "assets/youclip4.png",
             "assets/youclip5.png"
+        ]
+    },
+    {
+        id: "golazo",
+        name: "Golazo",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/19/ce/e1/19cee1ab-f6e2-af0c-421c-ab41bb338e53/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/golazo-soccer-puzzle/id6778422146",
+        category: "cat-games",
+        c: "Puzzle · Sport",
+        y: "2026",
+        accent: "#16a34a",
+        tagline: "Score goals with your brain: a 2D football puzzle.",
+        desc: "Swipe a ball and it slides straight until it hits an obstacle. Arrows redirect shots, walls block them, and one ball can stop another: every level is a mini-puzzle about order and path.",
+        features: ["One-swipe mechanics", "Dozens of crafted levels", "Stars and leagues", "Deadly trap tiles"],
+        tech: ["SwiftUI", "SpriteKit", "SceneKit", "StoreKit"],
+        screenshots: [
+            "assets/golazo1.jpg",
+            "assets/golazo2.jpg",
+            "assets/golazo3.jpg",
+            "assets/golazo4.jpg",
+            "assets/golazo5.jpg"
         ]
     },
     {
@@ -60,26 +102,6 @@ const apps = [
             "assets/crossword2.webp",
             "assets/crossword3.webp",
             "assets/crossword4.webp"
-        ]
-    },
-    {
-        id: "motscroisesfr",
-        name: "Mots Croisés FR",
-        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/59/fd/ad/59fdad93-2f64-2c18-01b0-7b7abf59c0aa/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-        url: "https://apps.apple.com/app/mots-croises-fr/id6755928817",
-        category: "cat-games",
-        c: "Word",
-        y: "2025",
-        accent: "#ef4444",
-        tagline: "Mots croisés français, soignés et hors ligne.",
-        desc: "Le pendant français de Crossword Play : grilles bleues classiques, support des accents, et une grosse base de définitions FR.",
-        features: ["Hors ligne", "Grilles FR", "Statistiques", "Mode sombre"],
-        tech: ["SwiftUI", "CoreData", "StoreKit"],
-        screenshots: [
-            "assets/motscroisesfr1.jpg",
-            "assets/motscroisesfr2.jpg",
-            "assets/motscroisesfr3.jpg",
-            "assets/motscroisesfr4.jpg"
         ]
     },
     {
@@ -126,6 +148,27 @@ const apps = [
         ]
     },
     {
+        id: "4bulls",
+        name: "4 Bulls",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9d/6a/d5/9d6ad5b7-79e0-ad6e-b74b-ec94923c89c8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/4-bulls/id6752808345",
+        category: "cat-games",
+        c: "Logic",
+        y: "2025",
+        accent: "#f97316",
+        tagline: "Guess the secret 4-digit code before the bull does.",
+        desc: "The classic Bulls and Cows logic game: every guess gives clues, a cow for a right digit in the wrong place, a bull for a right digit in the right place. Fast rounds, a colorful design and a leaderboard.",
+        features: ["Bulls & Cows logic", "Score streaks", "Leaderboard", "Hundreds of combinations"],
+        tech: ["SwiftUI", "SwiftData", "MultipeerConnectivity", "StoreKit"],
+        screenshots: [
+            "assets/4bulls1.jpg",
+            "assets/4bulls2.jpg",
+            "assets/4bulls3.jpg",
+            "assets/4bulls4.jpg",
+            "assets/4bulls5.jpg"
+        ]
+    },
+    {
         id: "tictactoe",
         name: "Tic Tac Toe",
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/cd/5e/6c/cd5e6cea-7aea-c23b-a534-5556590d5e0b/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
@@ -164,26 +207,6 @@ const apps = [
             "assets/bn3.png",
             "assets/bn4.png",
             "assets/bn5.png"
-        ]
-    },
-    {
-        id: "crossword",
-        name: "CrossWord Mix",
-        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/4a/da/4a/4ada4a61-f5cf-daec-1731-19b2ebd1dae1/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
-        url: "https://apps.apple.com/app/crossword-mix/id6446602766",
-        category: "cat-games",
-        c: "Word",
-        y: "2023",
-        accent: "#06b6d4",
-        tagline: "A mix of crossword styles in one app.",
-        desc: "Multiple grid layouts and difficulty levels. Built to test SwiftUI's grid system on a real-world product.",
-        features: ["Multiple layouts", "Themed packs", "Hints", "Statistics"],
-        tech: ["SwiftUI", "CoreData"],
-        screenshots: [
-            "assets/crossword-mix1.png",
-            "assets/crossword-mix2.png",
-            "assets/crossword-mix3.png",
-            "assets/crossword-mix4.png"
         ]
     },
     {
@@ -227,44 +250,87 @@ const apps = [
         ]
     },
     {
-        id: "goal",
-        name: "Goal - Let's play",
-        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/88/db/b2/88dbb234-0f9a-7fb0-8acb-b52949ded8ef/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
-        url: "https://apps.apple.com/app/goal-lets-play/id1669709630",
+        id: "crossmix",
+        name: "Crossmix",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/54/d5/cf/54d5cf98-1ae8-0b7e-aee4-6ee813be7de5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/crossmix-word-search-puzzle/id6446441786",
         category: "cat-games",
-        c: "Sport",
+        c: "Word",
         y: "2023",
-        accent: "#10b981",
-        tagline: "A puzzle game where you score goals on a 2D soccer field.",
-        desc: "Strategy and reflection await — score goals on a 2D soccer field with simple but addictive mechanics.",
-        features: ["Multiple levels", "Strategy puzzles", "Smooth animations", "iCloud sync"],
-        tech: ["UIKit", "SpriteKit", "iCloud"],
+        accent: "#06b6d4",
+        tagline: "Endless crossword grids, generated on the fly.",
+        desc: "A word game that generates infinite dynamic grids, with three difficulty levels and hints for the tricky words.",
+        features: ["Infinite grids", "3 difficulty levels", "Hints", "Free to play"],
+        tech: ["SwiftUI", "CoreData", "StoreKit"],
         screenshots: [
-            "assets/goal1.png",
-            "assets/goal2.png",
-            "assets/goal3.png",
-            "assets/goal4.png",
-            "assets/goal5.png"
+            "assets/crossmix1.jpg",
+            "assets/crossmix2.jpg",
+            "assets/crossmix3.jpg",
+            "assets/crossmix4.jpg",
+            "assets/crossmix5.jpg"
         ]
     },
     {
-        id: "puzzlo",
-        name: "Puzzlo",
-        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/c6/2a/fe/c62afe97-995c-de9d-631a-3be9f67a4792/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
-        url: "https://apps.apple.com/app/puzzlo/id6447078771",
+        id: "ipuzzle",
+        name: "iPuzzle",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/2c/c0/00/2cc000e3-9852-eea5-5637-9c6209363348/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/ipuzzle-lets-play/id6445866276",
         category: "cat-games",
         c: "Puzzle",
         y: "2023",
         accent: "#a855f7",
-        tagline: "Calming logic puzzles for the commute.",
-        desc: "Sliding tiles, rotating mirrors, lots of small wins. Designed to be picked up for one minute.",
-        features: ["100+ levels", "Daily puzzle", "Zen mode", "iCloud sync"],
-        tech: ["SpriteKit", "UIKit", "iCloud"],
+        tagline: "Turn any photo into a jigsaw puzzle.",
+        desc: "Pick a free photo or one of your own and play it as a jigsaw puzzle, with several difficulty levels.",
+        features: ["Free photo library", "Your own photos", "Difficulty levels"],
+        tech: ["SwiftUI", "SpriteKit", "Combine"],
         screenshots: [
-            "assets/puzzlo1.png",
-            "assets/puzzlo2.png",
-            "assets/puzzlo3.png",
-            "assets/puzzlo4.png"
+            "assets/ipuzzle1.jpg",
+            "assets/ipuzzle2.jpg",
+            "assets/ipuzzle3.jpg",
+            "assets/ipuzzle4.jpg",
+            "assets/ipuzzle5.jpg"
+        ]
+    },
+    {
+        id: "crosswordar1",
+        name: "كلمات متقاطعة - لعبة ألغاز",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8d/f1/88/8df18819-5d7f-9907-a92a-08f3f4c3ff97/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/id6446803444",
+        category: "cat-games",
+        c: "Word · Arabic",
+        y: "2023",
+        accent: "#0d9488",
+        tagline: "Arabic crosswords with endless grids.",
+        desc: "An Arabic crossword game with endlessly generated grids and three difficulty levels, from easy to hard.",
+        features: ["Endless grids", "3 difficulty levels", "Arabic words", "Free to play"],
+        tech: ["SwiftUI", "CoreData", "StoreKit"],
+        screenshots: [
+            "assets/crosswordar11.jpg",
+            "assets/crosswordar12.jpg",
+            "assets/crosswordar13.jpg",
+            "assets/crosswordar14.jpg",
+            "assets/crosswordar15.jpg"
+        ]
+    },
+    {
+        id: "crosswordar2",
+        name: "كلمات متقاطعة: لعبة ذكاء وتحدي",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/6e/a9/dc6ea9b8-03b7-ece2-d646-0fd7355edebb/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/id6446788204",
+        category: "cat-games",
+        c: "Word · Arabic",
+        y: "2023",
+        accent: "#7c3aed",
+        tagline: "Hundreds of Arabic words in grids that never repeat.",
+        desc: "An Arabic word game redesigned with a modern look and several themes: new grids every time, three levels and hints for the hard words.",
+        features: ["Grids that never repeat", "3 difficulty levels", "Hints", "Multiple themes"],
+        tech: ["SwiftUI", "StoreKit", "UserNotifications"],
+        screenshots: [
+            "assets/crosswordar21.jpg",
+            "assets/crosswordar22.jpg",
+            "assets/crosswordar23.jpg",
+            "assets/crosswordar24.jpg",
+            "assets/crosswordar25.jpg"
         ]
     }
 ];
