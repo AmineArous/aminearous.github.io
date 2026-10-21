@@ -1,5 +1,44 @@
 const apps = [
     {
+        id: "crazytrain",
+        name: "Crazy Train",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/5d/42/9f5d42f0-2125-8f0e-ae02-0a5355ed181d/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/escape-room-crazy-train/id6821377997",
+        category: "cat-games",
+        c: { en: "Escape game · Puzzle", fr: "Escape game · Énigmes" },
+        y: "2026",
+        accent: "#9F372C",
+        tagline: {
+            en: "Stop a runaway night train before the broken bridge.",
+            fr: "Arrêtez un train fou avant le pont brisé."
+        },
+        desc: {
+            en: "1886, in the Sierra Nevada, on a stormy night. You are the brakeman, alone aboard a night train rolling downhill toward a bridge broken by lightning. Open the locked doors car by car with what each one holds, reach the locomotive and stop the train in time.",
+            fr: "1886, dans la Sierra Nevada, une nuit d'orage. Vous êtes serre-frein, seul à bord d'un train de nuit qui dévale vers un pont brisé par la foudre. Ouvrez les portes fermées à clé wagon après wagon avec ce que chacun contient, rejoignez la locomotive et arrêtez le train à temps."
+        },
+        features: {
+            en: ["5 illustrated scenes", "Puzzles hidden in every object", "One hint at a time", "No account, no ads"],
+            fr: ["5 scènes illustrées", "Des énigmes dans chaque objet", "Un indice à la fois", "Sans compte ni publicité"]
+        },
+        tech: ["SwiftUI", "Canvas", "AVFoundation", "StoreKit 2"],
+        screenshots: {
+            en: [
+                "assets/crazytrain-en1.jpg",
+                "assets/crazytrain-en2.jpg",
+                "assets/crazytrain-en3.jpg",
+                "assets/crazytrain-en4.jpg",
+                "assets/crazytrain-en5.jpg"
+            ],
+            fr: [
+                "assets/crazytrain-fr1.jpg",
+                "assets/crazytrain-fr2.jpg",
+                "assets/crazytrain-fr3.jpg",
+                "assets/crazytrain-fr4.jpg",
+                "assets/crazytrain-fr5.jpg"
+            ]
+        }
+    },
+    {
         id: "glyphwork",
         name: "Glyphwork",
         icon: "assets/glyphwork-icon.png",

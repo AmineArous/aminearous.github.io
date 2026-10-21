@@ -17,9 +17,9 @@ function t(key) {
     return dict[key] !== undefined ? dict[key] : key;
 }
 
-// App fields are { en, fr } pairs
+// App fields are { en, fr } pairs, or a plain list shared by both languages
 function loc(field) {
-    if (!field) return field;
+    if (!field || Array.isArray(field)) return field;
     return field[currentLang] !== undefined ? field[currentLang] : field.en;
 }
 
@@ -166,9 +166,9 @@ function openAppModal(a) {
             <a class="modal-cta ghost" href="#" onclick="closeAppModal();return false;">${t('modal-close')}</a>`
         : `<button class="modal-cta ghost" disabled style="opacity:0.5;cursor:default">—</button>`;
 
-    const shots = a.screenshots && a.screenshots.length ? a.screenshots : [];
+    const shots = loc(a.screenshots) || [];
     const shotsHTML = shots.length
-        ? shots.map(src => `<img class="modal-shot" src="${src}" alt="${a.name} screenshot" loading="lazy" onclick="openShotLightbox(this.src)" onerror="replaceShotWithPlaceholder(this)"/>`).join('')
+        ? shots.map(src => `<img class="modal-shot" src="${src}" alt="${a.name} screenshot" loading="lazy" onload="this.classList.toggle('landscape', this.naturalWidth > this.naturalHeight)" onclick="openShotLightbox(this.src)" onerror="replaceShotWithPlaceholder(this)"/>`).join('')
         : Array.from({length: 3}, () => renderShotPlaceholder(a.name + ' screenshot')).join('');
 
     const statsHTML = `
