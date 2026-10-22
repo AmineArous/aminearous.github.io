@@ -1,5 +1,44 @@
 const apps = [
     {
+        id: "doublelock",
+        name: "Double Lock",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8c/5f/aa/8c5faa20-16b1-a518-31a2-e3308ac4bb76/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/double-lock-escape-room/id6821069166",
+        category: "cat-games",
+        c: { en: "Escape game · Puzzle", fr: "Escape game · Énigmes" },
+        y: "2026",
+        accent: "#D07030",
+        tagline: {
+            en: "Track down the greatest art forger of his time.",
+            fr: "Traquez le plus grand faussaire de son temps."
+        },
+        desc: {
+            en: "You are the investigative journalist who gathered the evidence against Victor Lenoir, and he was expecting you. From Paris to the Adriatic, each of his hideouts is a trap: escape each one, follow his trail and have him arrested before he disappears.",
+            fr: "Vous êtes journaliste d'investigation, vous avez réuni les preuves contre Victor Lenoir, et il vous attendait. De Paris à l'Adriatique, chacun de ses refuges est un piège : sortez de chacun, suivez sa trace et faites-le arrêter avant qu'il disparaisse."
+        },
+        features: {
+            en: ["4 scenes styled like 1930s film posters", "Puzzles hidden in every object", "One hint at a time", "No account, no ads"],
+            fr: ["4 scènes façon affiches de cinéma des années 30", "Des énigmes dans chaque objet", "Un indice à la fois", "Sans compte ni publicité"]
+        },
+        tech: ["SwiftUI", "Canvas", "AVFoundation", "StoreKit 2"],
+        screenshots: {
+            en: [
+                "assets/doublelock-en1.jpg",
+                "assets/doublelock-en2.jpg",
+                "assets/doublelock-en3.jpg",
+                "assets/doublelock-en4.jpg",
+                "assets/doublelock-en5.jpg"
+            ],
+            fr: [
+                "assets/doublelock-fr1.jpg",
+                "assets/doublelock-fr2.jpg",
+                "assets/doublelock-fr3.jpg",
+                "assets/doublelock-fr4.jpg",
+                "assets/doublelock-fr5.jpg"
+            ]
+        }
+    },
+    {
         id: "crazytrain",
         name: "Crazy Train",
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/5d/42/9f5d42f0-2125-8f0e-ae02-0a5355ed181d/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
