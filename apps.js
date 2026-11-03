@@ -1,5 +1,44 @@
 const apps = [
     {
+        id: "alcatraz",
+        name: "Alcatraz",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/26/46/71/26467183-e91f-722c-fdd3-ae0a0f2c6264/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/escape-room-alcatraz/id6827712466",
+        category: "cat-games",
+        c: { en: "Escape game · Puzzle", fr: "Escape game · Énigmes" },
+        y: "2026",
+        accent: "#1090D0",
+        tagline: {
+            en: "Break out of Alcatraz in a single night.",
+            fr: "Évadez-vous d'Alcatraz en une seule nuit."
+        },
+        desc: {
+            en: "1962. Two years in Alcatraz for a theft you didn't commit. The inmate who had your cell before you was planning his escape: pick up his plan, gather what you need under the guards' eyes, then break out in a single night.",
+            fr: "1962. Deux ans à Alcatraz pour un vol que vous n'avez pas commis. Le détenu qui avait votre cellule préparait son évasion : reprenez son plan, récupérez ce qu'il faut sous l'œil des gardiens, puis sortez en une seule nuit."
+        },
+        features: {
+            en: ["8 illustrated scenes, from the cell to the dock", "Guards making their rounds", "One hint at a time", "No account, no ads"],
+            fr: ["8 scènes illustrées, de la cellule jusqu'au quai", "Des gardiens qui font leur ronde", "Un indice à la fois", "Sans compte ni publicité"]
+        },
+        tech: ["SwiftUI", "AVFoundation", "StoreKit 2"],
+        screenshots: {
+            en: [
+                "assets/alcatraz-en1.jpg",
+                "assets/alcatraz-en2.jpg",
+                "assets/alcatraz-en3.jpg",
+                "assets/alcatraz-en4.jpg",
+                "assets/alcatraz-en5.jpg"
+            ],
+            fr: [
+                "assets/alcatraz-fr1.jpg",
+                "assets/alcatraz-fr2.jpg",
+                "assets/alcatraz-fr3.jpg",
+                "assets/alcatraz-fr4.jpg",
+                "assets/alcatraz-fr5.jpg"
+            ]
+        }
+    },
+    {
         id: "doublelock",
         name: "Double Lock",
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8c/5f/aa/8c5faa20-16b1-a518-31a2-e3308ac4bb76/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
