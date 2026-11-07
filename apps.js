@@ -2,7 +2,7 @@ const apps = [
     {
         id: "alcatraz",
         name: "Alcatraz",
-        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/26/46/71/26467183-e91f-722c-fdd3-ae0a0f2c6264/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d9/a5/84/d9a58472-105f-6dfb-92b4-28f93a8a129b/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/escape-room-alcatraz/id6827712466",
         category: "cat-games",
         c: { en: "Escape game · Puzzle", fr: "Escape game · Énigmes" },
@@ -419,7 +419,7 @@ const apps = [
     {
         id: "motscroises",
         name: "Mots croisés - Français",
-        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/34/ae/47/34ae47af-41e1-788a-1375-f8e1bb09900e/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a0/9a/35/a09a355e-aa03-e358-41a4-158fe24370f9/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/mots-crois%C3%A9s-fran%C3%A7ais/id6446811568",
         category: "cat-games",
         c: { en: "Word", fr: "Mots" },
