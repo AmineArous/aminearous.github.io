@@ -209,7 +209,7 @@ const apps = [
     {
         id: "playblox",
         name: "PlayBlox",
-        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/47/f0/b3/47f0b38a-717c-05c2-bc9f-8fb500a74f69/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9d/c2/ef/9dc2ef62-2cf6-253e-523a-a0f1bc29c707/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/playblox/id6756233416",
         category: "cat-games",
         c: { en: "Puzzle", fr: "Puzzle" },
@@ -228,14 +228,22 @@ const apps = [
             fr: ["Défis quotidiens", "Game Center", "Retours haptiques", "Synchronisation iCloud"]
         },
         tech: ["SwiftUI", "Canvas", "GameKit", "iCloud"],
-        screenshots: [
-            "assets/playblox1.webp",
-            "assets/playblox2.webp",
-            "assets/playblox3.webp",
-            "assets/playblox4.webp",
-            "assets/playblox5.webp",
-            "assets/playblox6.webp"
-        ]
+        screenshots: {
+            en: [
+                "assets/playblox-en1.jpg",
+                "assets/playblox-en2.jpg",
+                "assets/playblox-en3.jpg",
+                "assets/playblox-en4.jpg",
+                "assets/playblox-en5.jpg"
+            ],
+            fr: [
+                "assets/playblox-fr1.jpg",
+                "assets/playblox-fr2.jpg",
+                "assets/playblox-fr3.jpg",
+                "assets/playblox-fr4.jpg",
+                "assets/playblox-fr5.jpg"
+            ]
+        }
     },
     {
         id: "crosswordplay",
