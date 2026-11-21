@@ -41,7 +41,7 @@ const apps = [
     {
         id: "doublelock",
         name: "Double Lock",
-        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8c/5f/aa/8c5faa20-16b1-a518-31a2-e3308ac4bb76/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fc/72/e5/fc72e51d-d821-335b-4ad6-a26dcb4197e9/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/double-lock-escape-room/id6821069166",
         category: "cat-games",
         c: { en: "Escape game · Puzzle", fr: "Escape game · Énigmes" },
