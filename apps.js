@@ -1,5 +1,44 @@
 const apps = [
     {
+        id: "blackdivision",
+        name: "Black Division",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/0f/e6/3e0fe627-6c0a-5faa-9474-e27ede619f68/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+        url: "https://apps.apple.com/app/escape-game-black-division/id6829541649",
+        category: "cat-games",
+        c: { en: "Escape game · Puzzle", fr: "Escape game · Énigmes" },
+        y: "2026",
+        accent: "#C0A070",
+        tagline: {
+            en: "Pass the spy agency's test, one floor at a time.",
+            fr: "Réussissez le test d'une agence d'espionnage, étage par étage."
+        },
+        desc: {
+            en: "Clara is taking the recruitment test of Black Division, an intelligence agency housed in an Art Deco building. The director is waiting on the top floor, the elevator only goes up one floor at a time, and every floor hides its code.",
+            fr: "Clara passe le test de recrutement de Black Division, une agence de renseignement installée dans un immeuble art déco. Le directeur l'attend au dernier étage, l'ascenseur ne monte que d'un étage à la fois, et chaque étage cache son code."
+        },
+        features: {
+            en: ["6 illustrated scenes, from the lobby to the director's office", "Puzzles to figure out, not codes to copy", "One hint at a time", "7 languages"],
+            fr: ["6 scènes illustrées, du hall au bureau du directeur", "Des énigmes à comprendre, pas des codes à recopier", "Un indice à la fois", "7 langues"]
+        },
+        tech: ["SwiftUI", "AVFoundation", "StoreKit 2", "AdMob"],
+        screenshots: {
+            en: [
+                "assets/blackdivision-en1.jpg",
+                "assets/blackdivision-en2.jpg",
+                "assets/blackdivision-en3.jpg",
+                "assets/blackdivision-en4.jpg",
+                "assets/blackdivision-en5.jpg"
+            ],
+            fr: [
+                "assets/blackdivision-fr1.jpg",
+                "assets/blackdivision-fr2.jpg",
+                "assets/blackdivision-fr3.jpg",
+                "assets/blackdivision-fr4.jpg",
+                "assets/blackdivision-fr5.jpg"
+            ]
+        }
+    },
+    {
         id: "alcatraz",
         name: "Alcatraz",
         icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d9/a5/84/d9a58472-105f-6dfb-92b4-28f93a8a129b/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
@@ -545,7 +584,7 @@ const apps = [
     {
         id: "crosswordar1",
         name: "كلمات متقاطعة - لعبة ألغاز",
-        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8d/f1/88/8df18819-5d7f-9907-a92a-08f3f4c3ff97/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/88/32/be88328a-88ea-e559-d1f9-652c4ffbb5f6/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/id6446803444",
         category: "cat-games",
         c: { en: "Word · Arabic", fr: "Mots · Arabe" },
