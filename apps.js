@@ -407,7 +407,7 @@ const apps = [
     {
         id: "tictactoe",
         name: "Tic Tac Toe",
-        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/cd/5e/6c/cd5e6cea-7aea-c23b-a534-5556590d5e0b/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
+        icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/1f/82/181f824b-4030-5bcc-f13e-bac85338f04a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
         url: "https://apps.apple.com/app/tic-tac-toe/id382936587",
         category: "cat-games",
         c: { en: "Classic", fr: "Classique" },
